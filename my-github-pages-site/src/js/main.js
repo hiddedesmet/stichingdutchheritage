@@ -176,40 +176,85 @@ class StitchingDutchHeritage {
     }
 
     handleMenuItemClick(item) {
-        const category = item.textContent.trim().toLowerCase();
+        const fullText = item.textContent.trim().toLowerCase();
+        console.log('Clicked menu item:', fullText); // Debug log
         
-        // Map menu items to filter categories
-        const categoryMap = {
-            'zaanse schans': 'zaanse',
-            'zaan region sampler': 'zaanse',
-            '17de eeuwse impressies': 'stadsgezichten',
-            'markt- en pleintaferelen': 'stadsgezichten',
-            'iconische panden': 'stadsgezichten',
-            'diverse molentypen': 'molens',
-            'watermolens': 'molens',
-            'combinaties molen': 'molens',
-            'traditionele kostuums': 'klederdracht',
-            'regio merklappen': 'klederdracht',
-            'tegelmotieven': 'delfts',
-            'postzegel borduurwerken': 'delfts',
-            'wapens en deviezen': 'koninklijk',
-            'inhuldigingen': 'koninklijk',
-            'huwelijks': 'koninklijk',
-            'kamer- en wilde bloemen': 'flora',
-            'bloembollenlandschap': 'flora'
+        // More robust mapping that handles the actual menu text and subcategories
+        const subcategoryMap = {
+            // Zaanse Taferelen subcategories
+            'zaanse schans (molens, houten huisjes)': { category: 'zaanse', subcategory: 'zaanse-schans' },
+            'zaan sampler en regionale merklappen': { category: 'zaanse', subcategory: 'zaan-sampler' },
+            
+            // Stadsgezichten subcategories
+            '17de eeuwse impressies (amstelredam 1650, zicht op amsterdam)': { category: 'stadsgezichten', subcategory: '17de-eeuws' },
+            '17de eeuwse impressies': { category: 'stadsgezichten', subcategory: '17de-eeuws' },
+            'markt- en pleintaferelen (waterlooplein)': { category: 'stadsgezichten', subcategory: 'markt-plein' },
+            'markt- en pleintaferelen': { category: 'stadsgezichten', subcategory: 'markt-plein' },
+            'iconische panden en paleizen (paleis op de dam, grachtenpanden samplers)': { category: 'stadsgezichten', subcategory: 'iconische-panden' },
+            'iconische panden en paleizen': { category: 'stadsgezichten', subcategory: 'iconische-panden' },
+            
+            // Molens subcategories
+            'diverse molentypen (stellingmolen, grondzeiler, tower mill)': { category: 'molens', subcategory: 'molentypen' },
+            'diverse molentypen': { category: 'molens', subcategory: 'molentypen' },
+            'watermolens en polders (watermolen in holland, hollow post mill)': { category: 'molens', subcategory: 'watermolens' },
+            'watermolens en polders': { category: 'molens', subcategory: 'watermolens' },
+            'combinaties molen + zeilschip (dutch windmill and sailing ship)': { category: 'molens', subcategory: 'molen-zeilschip' },
+            'combinaties molen + zeilschip': { category: 'molens', subcategory: 'molen-zeilschip' },
+            
+            // Klederdracht subcategories
+            'traditionele kostuums (twaalf echtparen in klederdracht)': { category: 'klederdracht', subcategory: 'traditionele-kostuums' },
+            'traditionele kostuums': { category: 'klederdracht', subcategory: 'traditionele-kostuums' },
+            'regio merklappen (oud west friesland, nederlandse heraldiek met regionale wapenschilden)': { category: 'klederdracht', subcategory: 'regio-merklappen' },
+            'regio merklappen': { category: 'klederdracht', subcategory: 'regio-merklappen' },
+            
+            // Delfts Blauw subcategories
+            'tegelmotieven (tegel met molen, tegel met stokpaardjes)': { category: 'delfts', subcategory: 'tegelmotieven' },
+            'tegelmotieven': { category: 'delfts', subcategory: 'tegelmotieven' },
+            'postzegel borduurwerken (koningin wilhelmina 10 cent, koningin juliana 45 cent)': { category: 'delfts', subcategory: 'postzegel-borduurwerken' },
+            'postzegel borduurwerken': { category: 'delfts', subcategory: 'postzegel-borduurwerken' },
+            
+            // Koninklijk Huis subcategories
+            'wapens en deviezen (je maintiendrai)': { category: 'koninklijk', subcategory: 'wapens-deviezen' },
+            'wapens en deviezen': { category: 'koninklijk', subcategory: 'wapens-deviezen' },
+            'inhuldigingen en geboortelappen (beatrix 1980, geboorte prinses amalia, merklap geboorte beatrix)': { category: 'koninklijk', subcategory: 'inhuldigingen-geboorte' },
+            'inhuldigingen en geboortelappen': { category: 'koninklijk', subcategory: 'inhuldigingen-geboorte' },
+            'huwelijks en jubileumsamplers (beatrix & claus, willem alexander & máxima)': { category: 'koninklijk', subcategory: 'huwelijks-jubileum' },
+            'huwelijks en jubileumsamplers': { category: 'koninklijk', subcategory: 'huwelijks-jubileum' },
+            
+            // Flora & Fauna subcategories
+            'kamer- en wilde bloemen (kaaps viooltje, korenbloemen)': { category: 'flora', subcategory: 'kamer-wilde-bloemen' },
+            'kamer- en wilde bloemen': { category: 'flora', subcategory: 'kamer-wilde-bloemen' },
+            'bloembollenlandschap (de bollenstreek)': { category: 'flora', subcategory: 'bloembollenlandschap' },
+            'bloembollenlandschap': { category: 'flora', subcategory: 'bloembollenlandschap' }
         };
 
-        // Find matching category
-        let filterCategory = 'all';
-        for (const [key, value] of Object.entries(categoryMap)) {
-            if (category.includes(key.split(' ')[0])) {
-                filterCategory = value;
-                break;
+        // Direct mapping lookup first
+        let filterConfig = subcategoryMap[fullText];
+        
+        // If no direct match, try partial matching
+        if (!filterConfig) {
+            for (const [key, value] of Object.entries(subcategoryMap)) {
+                // Try to match key words from the beginning of the text
+                const keyWords = key.split(' ').slice(0, 3); // Take first 3 words
+                const textWords = fullText.split(' ').slice(0, 3);
+                
+                // Check if the first few words match
+                if (keyWords.every(word => fullText.includes(word))) {
+                    filterConfig = value;
+                    break;
+                }
             }
         }
-
-        // Apply filter
-        this.filterGallery(filterCategory);
+        
+        // Apply filter based on configuration
+        if (filterConfig) {
+            console.log('Applying subcategory filter:', filterConfig); // Debug log
+            this.filterGalleryBySubcategory(filterConfig.category, filterConfig.subcategory);
+        } else {
+            // Fallback to category-level filtering
+            console.log('No subcategory match found, trying category-level filter for:', fullText);
+            this.filterGallery('all'); // Default to show all
+        }
         
         // Scroll to gallery
         const gallery = document.querySelector('.embroidery-gallery');
@@ -295,6 +340,14 @@ class StitchingDutchHeritage {
         this.populateGallery(this.filteredData);
     }
 
+    filterGalleryBySubcategory(category, subcategory) {
+        this.filteredData = this.embroideryData.filter(item => 
+            item.category === category && item.subcategory === subcategory
+        );
+        
+        this.populateGallery(this.filteredData);
+    }
+
     populateGallery(data) {
         const galleryGrid = document.getElementById('gallery-grid');
         if (!galleryGrid) return;
@@ -329,24 +382,36 @@ class StitchingDutchHeritage {
         div.dataset.index = index;
         
         const categoryText = this.getCategoryText(item.category);
+        const subcategoryText = this.getSubcategoryText(item.subcategory);
         const title = this.currentLanguage === 'nl' ? item.titleNL : item.titleEN;
-        const description = this.currentLanguage === 'nl' ? item.descriptionNL : item.descriptionEN;
-        const dimensionsText = this.currentLanguage === 'nl' ? 'Afmetingen' : 'Dimensions';
         const priceText = this.currentLanguage === 'nl' ? 'Prijs' : 'Price';
+        const detailsText = this.currentLanguage === 'nl' ? 'Bekijk details' : 'View details';
         
         // Create price info HTML only if price exists
         const priceHtml = item.price ? `<p class="price">${priceText}: ${item.price}</p>` : '';
         
+        // Create subcategory display
+        const subcategoryHtml = subcategoryText ? ` • ${subcategoryText}` : '';
+        
         div.innerHTML = `
             <img src="images/${item.image}" alt="${title}" loading="lazy">
             <div class="item-info">
-                <span class="item-category">${categoryText}</span>
+                <span class="item-category">${categoryText}${subcategoryHtml}</span>
                 <h3>${title}</h3>
-                <p>${description}</p>
-                <p class="dimensions">${dimensionsText}: ${item.dimensions}</p>
                 ${priceHtml}
+                <div class="item-actions">
+                    <button class="details-button">
+                        <i class="fas fa-eye"></i>
+                        <span>${detailsText}</span>
+                    </button>
+                </div>
             </div>
-            <button class="view-details" title="Bekijk details">👁</button>
+            <div class="hover-overlay">
+                <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <p>${detailsText}</p>
+                </div>
+            </div>
         `;
         
         // Add click handler for modal
@@ -371,6 +436,44 @@ class StitchingDutchHeritage {
         };
         
         return categoryTexts[category] ? categoryTexts[category][this.currentLanguage] : category;
+    }
+
+    getSubcategoryText(subcategory) {
+        const subcategoryTexts = {
+            // Zaanse subcategories
+            'zaanse-schans': { nl: 'Zaanse Schans', en: 'Zaanse Schans' },
+            'zaan-sampler': { nl: 'Zaan Sampler', en: 'Zaan Sampler' },
+            
+            // Stadsgezichten subcategories
+            '17de-eeuws': { nl: '17de eeuw', en: '17th Century' },
+            'markt-plein': { nl: 'Markt & Plein', en: 'Market & Square' },
+            'iconische-panden': { nl: 'Iconische Panden', en: 'Iconic Buildings' },
+            'algemeen-stadsgezicht': { nl: 'Algemeen', en: 'General' },
+            
+            // Molens subcategories
+            'molentypen': { nl: 'Molentypen', en: 'Mill Types' },
+            'watermolens': { nl: 'Watermolens', en: 'Water Mills' },
+            'molen-zeilschip': { nl: 'Molen & Zeilschip', en: 'Mill & Sailing Ship' },
+            
+            // Klederdracht subcategories
+            'traditionele-kostuums': { nl: 'Traditionele Kostuums', en: 'Traditional Costumes' },
+            'regio-merklappen': { nl: 'Regio Merklappen', en: 'Regional Samplers' },
+            
+            // Delfts subcategories
+            'tegelmotieven': { nl: 'Tegelmotieven', en: 'Tile Motifs' },
+            'postzegel-borduurwerken': { nl: 'Postzegel Borduurwerken', en: 'Postage Stamp Embroidery' },
+            
+            // Koninklijk subcategories
+            'wapens-deviezen': { nl: 'Wapens & Deviezen', en: 'Coats of Arms & Mottos' },
+            'inhuldigingen-geboorte': { nl: 'Inhuldigingen & Geboorte', en: 'Inaugurations & Birth' },
+            'huwelijks-jubileum': { nl: 'Huwelijks & Jubileum', en: 'Wedding & Jubilee' },
+            
+            // Flora subcategories
+            'kamer-wilde-bloemen': { nl: 'Kamer- & Wilde Bloemen', en: 'House & Wild Flowers' },
+            'bloembollenlandschap': { nl: 'Bloembollenlandschap', en: 'Flower Bulb Landscape' }
+        };
+        
+        return subcategoryTexts[subcategory] ? subcategoryTexts[subcategory][this.currentLanguage] : '';
     }
 
     setupModal() {
