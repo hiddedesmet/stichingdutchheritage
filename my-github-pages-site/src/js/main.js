@@ -6,6 +6,8 @@ class StitchingDutchHeritage {
         this.embroideryData = [];
         this.currentImageIndex = 0;
         this.filteredData = [];
+        this.featuredWorksIndex = 0;
+        this.featuredRotationInterval = null;
         this.init();
     }
 
@@ -14,6 +16,7 @@ class StitchingDutchHeritage {
         this.setupHamburgerMenu();
         this.setupModal();
         this.setupGalleryFilters();
+        this.setupExpandButton();
         this.setInitialLanguage();
         this.loadEmbroideryData();
     }
@@ -72,6 +75,9 @@ class StitchingDutchHeritage {
 
         // Re-render gallery with updated language
         this.populateGallery(this.filteredData);
+        
+        // Update featured work title for new language
+        this.updateFeaturedWork();
         
         // Save language preference
         this.saveLanguagePreference(language);
@@ -267,6 +273,41 @@ class StitchingDutchHeritage {
         }
     }
 
+    setupExpandButton() {
+        const expandBtn = document.getElementById('expand-btn');
+        const expandedText = document.getElementById('expanded-text');
+        
+        if (!expandBtn || !expandedText) return;
+        
+        expandBtn.addEventListener('click', () => {
+            const isExpanded = expandedText.classList.contains('show');
+            
+            if (isExpanded) {
+                expandedText.classList.remove('show');
+                expandBtn.classList.remove('expanded');
+                
+                // Update button text
+                const btnText = expandBtn.querySelector('span');
+                if (this.currentLanguage === 'nl') {
+                    btnText.textContent = 'Lees meer over onze geschiedenis';
+                } else {
+                    btnText.textContent = 'Read more about our history';
+                }
+            } else {
+                expandedText.classList.add('show');
+                expandBtn.classList.add('expanded');
+                
+                // Update button text
+                const btnText = expandBtn.querySelector('span');
+                if (this.currentLanguage === 'nl') {
+                    btnText.textContent = 'Verberg tekst';
+                } else {
+                    btnText.textContent = 'Hide text';
+                }
+            }
+        });
+    }
+
     updateActiveFilterButton(category) {
         // Remove active class from all filter buttons
         const filterButtons = document.querySelectorAll('.filter-btn');
@@ -291,6 +332,8 @@ class StitchingDutchHeritage {
                 this.embroideryData = window.EMBROIDERY_DATA;
                 this.filteredData = [...this.embroideryData];
                 this.populateGallery(this.filteredData);
+                // Set up featured rotation now that we have all the data
+                this.setupFeaturedRotation();
             } else {
                 throw new Error('Embroidery data not loaded');
             }
@@ -327,6 +370,180 @@ class StitchingDutchHeritage {
 
         this.filteredData = [...this.embroideryData];
         this.populateGallery(this.filteredData);
+        // Set up featured rotation for fallback data too
+        this.setupFeaturedRotation();
+    }
+
+    setupFeaturedRotation() {
+        // Use all embroidery data for the carousel instead of just a few pieces
+        if (this.embroideryData && this.embroideryData.length > 0) {
+            this.featuredWorks = this.embroideryData.map(item => ({
+                image: item.image,
+                titleNL: item.titleNL,
+                titleEN: item.titleEN,
+                category: item.category
+            }));
+        } else {
+            // Fallback to curated list if embroidery data isn't loaded yet
+            this.featuredWorks = [
+                {
+                    image: '38.JPEG',
+                    titleNL: 'Amstelredam 1650',
+                    titleEN: 'Amsterdam 1650',
+                    category: 'stadsgezichten'
+                },
+                {
+                    image: '23.JPEG',
+                    titleNL: 'Zaanse Schans',
+                    titleEN: 'Zaanse Schans',
+                    category: 'zaanse'
+                },
+                {
+                    image: '42.JPEG',
+                    titleNL: 'Je Maintiendrai',
+                    titleEN: 'Je Maintiendrai',
+                    category: 'koninklijk'
+                },
+                {
+                    image: '27.JPEG',
+                    titleNL: 'Stellingmolen',
+                    titleEN: 'Post Mill',
+                    category: 'molens'
+                },
+                {
+                    image: '44.JPEG',
+                    titleNL: 'Kaaps Viooltje',
+                    titleEN: 'Cape Violet',
+                    category: 'flora'
+                },
+                {
+                    image: '32.JPEG',
+                    titleNL: 'Twaalf Echtparen',
+                    titleEN: 'Twelve Couples',
+                    category: 'klederdracht'
+                }
+            ];
+        }
+
+        // Start rotation after data is loaded
+        this.startFeaturedRotation();
+    }
+
+    startFeaturedRotation() {
+        // Update featured work immediately
+        this.updateFeaturedWork();
+        
+        // Set up automatic rotation every 15 seconds (slower)
+        this.featuredRotationInterval = setInterval(() => {
+            this.rotateFeaturedWork();
+        }, 15000);
+
+        // Pause rotation on hover
+        const featuredContainer = document.querySelector('.featured-embroidery');
+        if (featuredContainer) {
+            featuredContainer.addEventListener('mouseenter', () => {
+                clearInterval(this.featuredRotationInterval);
+            });
+
+            featuredContainer.addEventListener('mouseleave', () => {
+                this.featuredRotationInterval = setInterval(() => {
+                    this.rotateFeaturedWork();
+                }, 15000);
+            });
+
+            // Add click handler to open modal with current featured work details
+            featuredContainer.addEventListener('click', (e) => {
+                // Don't trigger if clicking on navigation buttons
+                if (e.target.closest('.featured-prev') || e.target.closest('.featured-next')) {
+                    return;
+                }
+                
+                const currentWork = this.featuredWorks[this.featuredWorksIndex];
+                
+                // Find the full embroidery data for this work to get all details
+                const fullWorkData = this.embroideryData.find(item => item.image === currentWork.image);
+                
+                if (fullWorkData) {
+                    // Open the modal with the current featured work
+                    this.openModal(fullWorkData, this.featuredWorksIndex);
+                }
+            });
+        }
+
+        // Set up navigation buttons
+        const prevBtn = document.getElementById('featured-prev');
+        const nextBtn = document.getElementById('featured-next');
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                this.previousFeaturedWork();
+            });
+        }
+        
+        if (nextBtn) {
+            nextBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                this.nextFeaturedWork();
+            });
+        }
+    }
+
+    previousFeaturedWork() {
+        clearInterval(this.featuredRotationInterval);
+        this.featuredWorksIndex = (this.featuredWorksIndex - 1 + this.featuredWorks.length) % this.featuredWorks.length;
+        this.updateFeaturedWork();
+        
+        // Restart rotation with 10 second timing
+        this.featuredRotationInterval = setInterval(() => {
+            this.rotateFeaturedWork();
+        }, 10000);
+    }
+
+    nextFeaturedWork() {
+        clearInterval(this.featuredRotationInterval);
+        this.rotateFeaturedWork();
+        
+        // Restart rotation with 10 second timing
+        this.featuredRotationInterval = setInterval(() => {
+            this.rotateFeaturedWork();
+        }, 10000);
+    }
+
+    rotateFeaturedWork() {
+        this.featuredWorksIndex = (this.featuredWorksIndex + 1) % this.featuredWorks.length;
+        this.updateFeaturedWork();
+    }
+
+    updateFeaturedWork() {
+        const featuredImage = document.getElementById('featured-image');
+        const featuredTitle = document.querySelector('.featured-title');
+        const featuredContainer = document.querySelector('.featured-embroidery');
+        
+        if (!featuredImage || !featuredTitle || !featuredContainer) return;
+
+        const currentWork = this.featuredWorks[this.featuredWorksIndex];
+        
+        // Add fade out effect
+        featuredContainer.style.opacity = '0.7';
+        featuredContainer.style.transform = 'scale(0.95)';
+        
+        setTimeout(() => {
+            // Update content
+            featuredImage.src = `images/${currentWork.image}`;
+            featuredImage.alt = this.currentLanguage === 'nl' ? currentWork.titleNL : currentWork.titleEN;
+            
+            // Update title with language support
+            featuredTitle.textContent = this.currentLanguage === 'nl' ? currentWork.titleNL : currentWork.titleEN;
+            featuredTitle.setAttribute('data-nl', currentWork.titleNL);
+            featuredTitle.setAttribute('data-en', currentWork.titleEN);
+            
+            // Add fade in effect
+            featuredContainer.style.opacity = '1';
+            featuredContainer.style.transform = 'scale(1)';
+        }, 300);
     }
 
     setupGalleryFilters() {

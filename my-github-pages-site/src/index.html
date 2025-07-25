@@ -99,32 +99,103 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero-visual">
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title" data-nl="Welkom bij Stitching Dutch Heritage" data-en="Welcome to Stitching Dutch Heritage">Welkom bij Stitching Dutch Heritage</h1>
-                    <p class="hero-subtitle" data-nl="Dé plek waar oude Hollandse borduurtradities herleven in eigentijdse patronen." data-en="The place where centuries old Dutch embroidery traditions come to life in contemporary designs.">Dé plek waar oude Hollandse borduurtradities herleven in eigentijdse patronen.</p>
+                <div class="hero-split">
+                    <div class="hero-content">
+                        <h1 class="hero-title" data-nl="Welkom bij Stitching Dutch Heritage" data-en="Welcome to Stitching Dutch Heritage">Welkom bij Stitching Dutch Heritage</h1>
+                        <p class="hero-subtitle" data-nl="Dé plek waar oude Hollandse borduurtradities herleven in eigentijdse patronen." data-en="The place where centuries old Dutch embroidery traditions come to life in contemporary designs.">Dé plek waar oude Hollandse borduurtradities herleven in eigentijdse patronen.</p>
+                        
+                        <div class="hero-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-nl="Folkloredag Zaanse Schans" data-en="Folklore day Zaanse Schans">Folkloredag Zaanse Schans</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span data-nl="16 augustus 2025" data-en="August 16, 2025">16 augustus 2025</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-heart"></i>
+                                <span data-nl="Authentieke patronen" data-en="Authentic patterns">Authentieke patronen</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-cta">
+                            <button class="cta-button" onclick="document.querySelector('.embroidery-gallery').scrollIntoView({behavior: 'smooth'})">
+                                <span data-nl="Bekijk collectie" data-en="View collection">Bekijk collectie</span>
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="featured-embroidery">
+                            <img id="featured-image" src="images/38.JPEG" alt="Featured embroidery" class="featured-img">
+                            <div class="featured-nav-overlay">
+                                <button class="featured-prev" id="featured-prev" aria-label="Previous">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="featured-next" id="featured-next" aria-label="Next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="featured-info">
+                                <span class="featured-category" data-nl="Uitgelicht werk" data-en="Featured work">Uitgelicht werk</span>
+                                <h3 class="featured-title" data-nl="Amstelredam 1650" data-en="Amsterdam 1650">Amstelredam 1650</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="content">
+        <section class="content-summary">
             <div class="container">
-                <div class="content-text">
-                    <div class="text-block nl-text">
-                        <p>Borduren was eeuwenlang een vertrouwd onderdeel van het Nederlandse leven. Meisjes leerden via merklappen en vrouwen borduurden in de avonduren taferelen die huis, familie en vaderland eerden. Molens, grachtenpanden, klederdracht en koninklijke symbolen kregen zo een plaats in textiel. Deze borduurwerken vingen herinneringen, verbonden generaties en hielden tradities levend.</p>
-                        
-                        <p>Bij Stitching Dutch Heritage vind je een zorgvuldig samengestelde collectie unieke borduurwerkjes: van sierlijke Zaanse taferelen en Delfts blauwe tegels tot weelderige flora en fauna-motieven en majestueuze koninklijke emblemen. Elk patroon is geïnspireerd op authentieke merklappen en historische samplers, en vertelt het verhaal van ons Hollandse erfgoed.</p>
-                        
-                        <p><strong>Alle borduurwerkjes zijn live te bewonderen én aan te schaffen op de Folkloredag op de Zaanse Schans, op 16 augustus 2025.</strong></p>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3 data-nl="Rijke traditie" data-en="Rich tradition">Rijke traditie</h3>
+                        <p data-nl="Geïnspireerd door eeuwenoude Nederlandse borduurtradities en historische merklappen." data-en="Inspired by centuries-old Dutch embroidery traditions and historical samplers.">Geïnspireerd door eeuwenoude Nederlandse borduurtradities en historische merklappen.</p>
                     </div>
                     
-                    <div class="text-block en-text" style="display: none;">
-                        <p>Embroidery has been a cherished part of Dutch life for generations. Girls learned the craft through sampler cloths, and women spent their evenings stitching scenes that honored home, family and country. Windmills, canal houses, traditional costumes and royal symbols found their way into fabric, capturing memories, connecting generations and keeping traditions alive.</p>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 data-nl="Unieke collectie" data-en="Unique collection">Unieke collectie</h3>
+                        <p data-nl="Van Zaanse molens tot koninklijke wapens - elk borduurwerk vertelt een verhaal." data-en="From Zaan windmills to royal coats of arms - each embroidery tells a story.">Van Zaanse molens tot koninklijke wapens - elk borduurwerk vertelt een verhaal.</p>
+                    </div>
+                    
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 data-nl="Handgemaakt" data-en="Handcrafted">Handgemaakt</h3>
+                        <p data-nl="Elke steek met zorg gezet, elke kleur zorgvuldig gekozen voor authentieke uitstraling." data-en="Every stitch placed with care, every color carefully chosen for authentic appearance.">Elke steek met zorg gezet, elke kleur zorgvuldig gekozen voor authentieke uitstraling.</p>
+                    </div>
+                </div>
+                
+                <div class="expand-content">
+                    <button class="expand-button" id="expand-btn">
+                        <span data-nl="Lees meer over onze geschiedenis" data-en="Read more about our history">Lees meer over onze geschiedenis</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    
+                    <div class="expanded-text" id="expanded-text">
+                        <div class="text-block nl-text">
+                            <p>Borduren was eeuwenlang een vertrouwd onderdeel van het Nederlandse leven. Meisjes leerden via merklappen en vrouwen borduurden in de avonduren taferelen die huis, familie en vaderland eerden. Molens, grachtenpanden, klederdracht en koninklijke symbolen kregen zo een plaats in textiel. Deze borduurwerken vingen herinneringen, verbonden generaties en hielden tradities levend.</p>
+                            
+                            <p>Bij Stitching Dutch Heritage vind je een zorgvuldig samengestelde collectie unieke borduurwerkjes: van sierlijke Zaanse taferelen en Delfts blauwe tegels tot weelderige flora en fauna-motieven en majestueuze koninklijke emblemen. Elk patroon is geïnspireerd op authentieke merklappen en historische samplers, en vertelt het verhaal van ons Hollandse erfgoed.</p>
+                        </div>
                         
-                        <p>At Stitching Dutch Heritage you'll discover a carefully curated collection of unique embroidery pieces: from graceful Zaans landscapes and Delft blue tile motifs to lush flora and fauna patterns and majestic royal emblems. Every design is inspired by authentic sampler cloths and historical needlework, telling the story of our Dutch heritage.</p>
-                        
-                        <p><strong>All pieces will be on display—and available for purchase—at the Folklore Day on the Zaanse Schans on August 16, 2025. We look forward to seeing you there!</strong></p>
+                        <div class="text-block en-text" style="display: none;">
+                            <p>Embroidery has been a cherished part of Dutch life for generations. Girls learned the craft through sampler cloths, and women spent their evenings stitching scenes that honored home, family and country. Windmills, canal houses, traditional costumes and royal symbols found their way into fabric, capturing memories, connecting generations and keeping traditions alive.</p>
+                            
+                            <p>At Stitching Dutch Heritage you'll discover a carefully curated collection of unique embroidery pieces: from graceful Zaans landscapes and Delft blue tile motifs to lush flora and fauna patterns and majestic royal emblems. Every design is inspired by authentic sampler cloths and historical needlework, telling the story of our Dutch heritage.</p>
+                        </div>
                     </div>
                 </div>
             </div>
