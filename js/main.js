@@ -250,16 +250,32 @@ class StitchingDutchHeritage {
         if (filterConfig) {
             console.log('Applying subcategory filter:', filterConfig); // Debug log
             this.filterGalleryBySubcategory(filterConfig.category, filterConfig.subcategory);
+            
+            // Update the filter buttons to show the correct category as active
+            this.updateActiveFilterButton(filterConfig.category);
         } else {
             // Fallback to category-level filtering
             console.log('No subcategory match found, trying category-level filter for:', fullText);
             this.filterGallery('all'); // Default to show all
+            this.updateActiveFilterButton('all');
         }
         
         // Scroll to gallery
         const gallery = document.querySelector('.embroidery-gallery');
         if (gallery) {
             gallery.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    updateActiveFilterButton(category) {
+        // Remove active class from all filter buttons
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to the corresponding button
+        const targetButton = document.querySelector(`[data-filter="${category}"]`);
+        if (targetButton) {
+            targetButton.classList.add('active');
         }
     }
 
