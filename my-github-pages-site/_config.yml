@@ -1,0 +1,52 @@
+title: Stitching Dutch Heritage
+description: Dé plek waar oude Hollandse borduurtradities herleven in eigentijdse patronen. The place where centuries old Dutch embroidery traditions come to life in contemporary designs.
+baseurl: ""
+url: "https://hiddedesmet.github.io/stichingdutchheritage"
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO and metadata
+author: Stitching Dutch Heritage
+locale: nl_NL
+lang: nl
+
+# Social media and contact
+social:
+  name: Stitching Dutch Heritage
+  links:
+    - https://github.com/hiddedesmet/stichingdutchheritage
+
+# Build settings
+exclude:
+  - README.md
+  - package.json
+  - node_modules/
+  - src/images/README-IMAGES.md
+
+# Collections for potential future expansion
+collections:
+  embroideries:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      lang: "nl"
+  - scope:
+      path: ""
+      type: "embroideries"
+    values:
+      layout: "embroidery"
+
+# Site configuration
+timezone: Europe/Amsterdam
+future: false
+highlighter: rouge

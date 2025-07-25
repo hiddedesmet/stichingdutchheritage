@@ -1,0 +1,13 @@
+<!-- Temporary placeholder - replace with actual Folkloredag logo -->
+<svg width="120" height="60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="60" fill="#4a7c59"/>
+  <text x="60" y="25" text-anchor="middle" fill="white" font-family="serif" font-size="10" font-weight="bold">
+    FOLKLOREDAG
+  </text>
+  <text x="60" y="40" text-anchor="middle" fill="white" font-family="serif" font-size="8">
+    Zaanse Schans
+  </text>
+  <text x="60" y="52" text-anchor="middle" fill="white" font-family="serif" font-size="7">
+    16 augustus 2025
+  </text>
+</svg>

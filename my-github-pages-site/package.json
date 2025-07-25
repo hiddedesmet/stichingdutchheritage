@@ -1,0 +1,21 @@
+{
+  "name": "my-github-pages-site",
+  "version": "1.0.0",
+  "description": "A simple GitHub Pages site to showcase images and content.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step can be added here'"
+  },
+  "keywords": [
+    "github",
+    "pages",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
