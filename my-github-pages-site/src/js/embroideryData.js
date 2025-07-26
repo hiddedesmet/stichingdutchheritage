@@ -369,7 +369,7 @@ window.EMBROIDERY_DATA = [
       "zaanse schans"
     ]
   },
-  {
+  /*{
     "image": "23.JPEG",
     "category": "zaanse",
     "subcategory": "zaanse-schans",
@@ -394,7 +394,7 @@ window.EMBROIDERY_DATA = [
       "zaanse",
       "zaanse schans"
     ]
-  },
+  },*/
   {
     "image": "23 b.JPEG",
     "category": "zaanse",
@@ -776,7 +776,7 @@ window.EMBROIDERY_DATA = [
       "young queen"
     ]
   },
-  {
+  /*{
     "image": "38.JPEG",
     "category": "stadsgezichten",
     "subcategory": "iconische-panden",
@@ -802,7 +802,7 @@ window.EMBROIDERY_DATA = [
       "paleis",
       "royal"
     ]
-  },
+  },*/
   {
     "image": "38 b.JPEG",
     "category": "stadsgezichten",

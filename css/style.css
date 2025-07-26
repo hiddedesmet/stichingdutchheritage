@@ -213,6 +213,37 @@ body.menu-open {
     padding-bottom: 0.5rem;
 }
 
+.nav-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-category-item {
+    padding: 0.8rem 1rem;
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+    border-radius: 0 8px 8px 0;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.2rem;
+}
+
+.nav-category-item:hover {
+    color: #1a4d20;
+    border-left-color: #4a9c59;
+    background: rgba(74, 156, 89, 0.1);
+    transform: translateX(5px);
+}
+
+.nav-category-item:active {
+    transform: translateX(3px);
+}
+
+/* Old styles (kept for backward compatibility if needed) */
 .nav-category {
     margin-bottom: 1.5rem;
 }
@@ -538,6 +569,43 @@ body.menu-open {
     color: #666;
     line-height: 1.6;
     font-size: 0.95rem;
+}
+
+/* Clickable summary card styles */
+.clickable-card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clickable-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.expanded-content {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+    line-height: 1.6;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.expanded-content h4 {
+    color: #2d5a3d;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.expanded-content div {
+    color: #666;
+    white-space: pre-line;
+    font-size: 0.95rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .expand-content {
