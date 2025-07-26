@@ -812,6 +812,114 @@ document.addEventListener('DOMContentLoaded', () => {
             heroContent.style.transform = 'translateY(0)';
         }, 300);
     }
+    
+    // Setup contact form event listener
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('contactName').value.trim(),
+                email: document.getElementById('contactEmail').value.trim(),
+                subject: document.getElementById('contactSubject').value.trim(),
+                message: document.getElementById('contactMessage').value.trim()
+            };
+            
+            submitContactForm(formData);
+        });
+        
+        // Real-time validation
+        const nameInput = document.getElementById('contactName');
+        const emailInput = document.getElementById('contactEmail');
+        const subjectInput = document.getElementById('contactSubject');
+        const messageInput = document.getElementById('contactMessage');
+        const messageCount = document.getElementById('messageCount');
+        
+        // Name validation
+        nameInput.addEventListener('blur', () => {
+            const value = nameInput.value.trim();
+            if (value && (value.length < 2 || value.length > 50)) {
+                showFieldError('contactName', 
+                    value.length < 2 ? 'Naam moet minimaal 2 karakters bevatten' : 'Naam mag maximaal 50 karakters bevatten',
+                    value.length < 2 ? 'Name must be at least 2 characters' : 'Name may be at most 50 characters'
+                );
+            } else if (value) {
+                document.getElementById('contactName').classList.remove('error');
+                document.getElementById('contactNameError').style.display = 'none';
+            }
+        });
+        
+        // Email validation
+        emailInput.addEventListener('blur', () => {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const value = emailInput.value.trim();
+            if (value && !emailRegex.test(value)) {
+                showFieldError('contactEmail', 'Voer een geldig email adres in', 'Please enter a valid email address');
+            } else if (value) {
+                document.getElementById('contactEmail').classList.remove('error');
+                document.getElementById('contactEmailError').style.display = 'none';
+            }
+        });
+        
+        // Subject validation
+        subjectInput.addEventListener('blur', () => {
+            const value = subjectInput.value.trim();
+            if (value && (value.length < 3 || value.length > 100)) {
+                showFieldError('contactSubject', 
+                    value.length < 3 ? 'Onderwerp moet minimaal 3 karakters bevatten' : 'Onderwerp mag maximaal 100 karakters bevatten',
+                    value.length < 3 ? 'Subject must be at least 3 characters' : 'Subject may be at most 100 characters'
+                );
+            } else if (value) {
+                document.getElementById('contactSubject').classList.remove('error');
+                document.getElementById('contactSubjectError').style.display = 'none';
+            }
+        });
+        
+        // Message validation and character count
+        messageInput.addEventListener('input', () => {
+            const value = messageInput.value;
+            messageCount.textContent = value.length;
+            
+            if (value.length > 1000) {
+                messageCount.style.color = '#e74c3c';
+                showFieldError('contactMessage', 'Bericht mag maximaal 1000 karakters bevatten', 'Message may be at most 1000 characters');
+            } else {
+                messageCount.style.color = value.length > 900 ? '#f39c12' : '#666';
+                if (value.length >= 10) {
+                    document.getElementById('contactMessage').classList.remove('error');
+                    document.getElementById('contactMessageError').style.display = 'none';
+                }
+            }
+        });
+        
+        messageInput.addEventListener('blur', () => {
+            const value = messageInput.value.trim();
+            if (value && value.length < 10) {
+                showFieldError('contactMessage', 'Bericht moet minimaal 10 karakters bevatten', 'Message must be at least 10 characters');
+            }
+        });
+    }
+    
+    // Initialize EmailJS
+    initializeEmailJS();
+    
+    // Close modal when clicking outside
+    const contactModal = document.getElementById('contactModal');
+    if (contactModal) {
+        contactModal.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                closeContactForm();
+            }
+        });
+    }
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && contactModal.style.display === 'flex') {
+            closeContactForm();
+        }
+    });
 });
 
 // Handle window resize
@@ -849,6 +957,347 @@ function toggleExpandedText(cardElement) {
         // Add visual feedback for clickable card
         cardElement.classList.toggle('expanded', !isVisible);
     }
+}
+
+// Global function for opening Google Maps to Zaanse Schans
+function openGoogleMaps() {
+    // Coordinates for Zaanse Schans: 52.4746° N, 4.8162° E
+    const googleMapsUrl = 'https://www.google.com/maps/place/Zaanse+Schans/@52.4746,4.8162,15z/data=!3m1!4b1!4m6!3m5!1s0x47c5fb4d043c0c83:0x2d1b02bb8dd988d9!8m2!3d52.4746!4d4.8162!16zL20vMDVyNGc?entry=ttu';
+    
+    // Show notification message first
+    showLocationNotification();
+    
+    // Open in new tab after a longer delay so user can read the notification
+    setTimeout(() => {
+        const newTab = window.open(googleMapsUrl, '_blank');
+        if (newTab) {
+            // Try multiple approaches to keep focus on current tab
+            setTimeout(() => {
+                newTab.blur();
+                window.focus();
+                document.body.focus();
+            }, 100);
+        }
+    }, 2500); // 2.5 seconds delay to show notification first
+}
+
+// Global function for downloading calendar event
+function downloadCalendarEvent() {
+    // Event details
+    const eventTitle = 'Folkloredag Zaanse Schans';
+    const eventDescription = 'Stitching Dutch Heritage - De plek waar oude hollande borduurtradities herleven.';
+    const eventLocation = 'Zaanse Schans, Nederland';
+    
+    // Date: August 16, 2025, 09:00 - 17:00 (UTC format for ICS)
+    const startDate = '20250816T090000';
+    const endDate = '20250816T170000';
+    
+    // Generate unique ID for the event
+    const eventId = 'folkloredag-2025-' + new Date().getTime() + '@stitchingdutchheritage.nl';
+    
+    // Create ICS content
+    const icsContent = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Stitching Dutch Heritage//Folkloredag//NL',
+        'CALSCALE:GREGORIAN',
+        'BEGIN:VEVENT',
+        `UID:${eventId}`,
+        `DTSTART:${startDate}`,
+        `DTEND:${endDate}`,
+        `SUMMARY:${eventTitle}`,
+        `DESCRIPTION:${eventDescription}`,
+        `LOCATION:${eventLocation}`,
+        'STATUS:CONFIRMED',
+        'SEQUENCE:0',
+        'END:VEVENT',
+        'END:VCALENDAR'
+    ].join('\r\n');
+    
+    // Create download link
+    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.download = 'folkloredag-zaanse-schans-2025.ics';
+    
+    // Trigger download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Show notification
+    showCalendarNotification();
+}
+
+// Function to show notification when map is opened
+function showLocationNotification() {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = 'location-notification';
+    
+    // Get current language
+    const currentLang = window.stitchingApp ? window.stitchingApp.currentLanguage : 'nl';
+    const text = currentLang === 'nl' ? 'Locatie geopend in nieuw tabblad' : 'Location opened in new tab';
+    
+    notification.innerHTML = `
+        <i class="fas fa-map-marker-alt"></i>
+        <span data-nl="Locatie geopend in nieuw tabblad" data-en="Location opened in new tab">${text}</span>
+    `;
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Show with animation
+    setTimeout(() => notification.classList.add('show'), 100);
+    
+    // Hide and remove after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => document.body.removeChild(notification), 300);
+    }, 3000);
+}
+
+// Function to show notification when calendar is downloaded
+function showCalendarNotification() {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = 'location-notification';
+    
+    // Get current language
+    const currentLang = window.stitchingApp ? window.stitchingApp.currentLanguage : 'nl';
+    const text = currentLang === 'nl' ? 'Agenda bestand gedownload' : 'Calendar file downloaded';
+    
+    notification.innerHTML = `
+        <i class="fas fa-calendar-download"></i>
+        <span data-nl="Agenda bestand gedownload" data-en="Calendar file downloaded">${text}</span>
+    `;
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Show with animation
+    setTimeout(() => notification.classList.add('show'), 100);
+    
+    // Hide and remove after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => document.body.removeChild(notification), 300);
+    }, 3000);
+}
+
+// Global function for opening contact form
+function openContactForm() {
+    const modal = document.getElementById('contactModal');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Reset form and validation
+    const form = document.getElementById('contactForm');
+    form.reset();
+    clearFormErrors();
+    
+    // Focus on first input
+    setTimeout(() => {
+        document.getElementById('contactName').focus();
+    }, 100);
+}
+
+// Global function for closing contact form
+function closeContactForm() {
+    const modal = document.getElementById('contactModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    clearFormErrors();
+}
+
+// Clear form validation errors
+function clearFormErrors() {
+    const errorElements = document.querySelectorAll('.error-message');
+    errorElements.forEach(element => {
+        element.textContent = '';
+        element.style.display = 'none';
+    });
+    
+    const inputs = document.querySelectorAll('.contact-form input, .contact-form textarea');
+    inputs.forEach(input => {
+        input.classList.remove('error');
+    });
+}
+
+// Show validation error
+function showFieldError(fieldId, messageNL, messageEN = null) {
+    const field = document.getElementById(fieldId);
+    const errorElement = document.getElementById(fieldId + 'Error');
+    
+    // Get current language
+    const currentLang = window.stitchingApp ? window.stitchingApp.currentLanguage : 'nl';
+    const message = currentLang === 'nl' ? messageNL : (messageEN || messageNL);
+    
+    field.classList.add('error');
+    errorElement.textContent = message;
+    errorElement.style.display = 'block';
+}
+
+// Validate form fields
+function validateContactForm(formData) {
+    clearFormErrors();
+    let isValid = true;
+    
+    // Name validation
+    if (!formData.name || formData.name.trim().length < 2) {
+        showFieldError('contactName', 'Naam moet minimaal 2 karakters bevatten', 'Name must be at least 2 characters');
+        isValid = false;
+    } else if (formData.name.trim().length > 50) {
+        showFieldError('contactName', 'Naam mag maximaal 50 karakters bevatten', 'Name may be at most 50 characters');
+        isValid = false;
+    }
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email || !emailRegex.test(formData.email)) {
+        showFieldError('contactEmail', 'Voer een geldig email adres in', 'Please enter a valid email address');
+        isValid = false;
+    }
+    
+    // Subject validation
+    if (!formData.subject || formData.subject.trim().length < 3) {
+        showFieldError('contactSubject', 'Onderwerp moet minimaal 3 karakters bevatten', 'Subject must be at least 3 characters');
+        isValid = false;
+    } else if (formData.subject.trim().length > 100) {
+        showFieldError('contactSubject', 'Onderwerp mag maximaal 100 karakters bevatten', 'Subject may be at most 100 characters');
+        isValid = false;
+    }
+    
+    // Message validation
+    if (!formData.message || formData.message.trim().length < 10) {
+        showFieldError('contactMessage', 'Bericht moet minimaal 10 karakters bevatten', 'Message must be at least 10 characters');
+        isValid = false;
+    } else if (formData.message.trim().length > 1000) {
+        showFieldError('contactMessage', 'Bericht mag maximaal 1000 karakters bevatten', 'Message may be at most 1000 characters');
+        isValid = false;
+    }
+    
+    return isValid;
+}
+
+// Initialize EmailJS
+function initializeEmailJS() {
+    // Initialize EmailJS with your public key
+    // You'll need to replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+    emailjs.init('YOUR_PUBLIC_KEY');
+}
+
+// Handle contact form submission with EmailJS
+async function submitContactForm(formData) {
+    if (!validateContactForm(formData)) {
+        return;
+    }
+    
+    // Show loading state
+    const submitBtn = document.getElementById('submitBtn');
+    const btnText = submitBtn.querySelector('.btn-text');
+    const btnLoading = submitBtn.querySelector('.btn-loading');
+    
+    submitBtn.disabled = true;
+    btnText.style.display = 'none';
+    btnLoading.style.display = 'flex';
+    
+    try {
+        // Send email using EmailJS
+        // You'll need to replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS IDs
+        const response = await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            to_email: 'desmet.hidde@gmail.com'
+        });
+        
+        if (response.status === 200) {
+            // Success
+            closeContactForm();
+            showContactSuccessNotification();
+        } else {
+            throw new Error('Email service responded with error');
+        }
+    } catch (error) {
+        console.error('Error sending email:', error);
+        showContactErrorNotification();
+    } finally {
+        // Reset button state
+        submitBtn.disabled = false;
+        btnText.style.display = 'inline';
+        btnLoading.style.display = 'none';
+    }
+}
+
+// Function to show success notification
+function showContactSuccessNotification() {
+    const notification = document.createElement('div');
+    notification.className = 'location-notification success';
+    
+    // Get current language
+    const currentLang = window.stitchingApp ? window.stitchingApp.currentLanguage : 'nl';
+    const text = currentLang === 'nl' ? 'Bericht succesvol verzonden!' : 'Message sent successfully!';
+    
+    notification.innerHTML = `
+        <i class="fas fa-check-circle"></i>
+        <span data-nl="Bericht succesvol verzonden!" data-en="Message sent successfully!">${text}</span>
+    `;
+    
+    document.body.appendChild(notification);
+    setTimeout(() => notification.classList.add('show'), 100);
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => document.body.removeChild(notification), 300);
+    }, 4000);
+}
+
+// Function to show error notification
+function showContactErrorNotification() {
+    const notification = document.createElement('div');
+    notification.className = 'location-notification error';
+    
+    // Get current language
+    const currentLang = window.stitchingApp ? window.stitchingApp.currentLanguage : 'nl';
+    const text = currentLang === 'nl' ? 'Er is een fout opgetreden. Probeer het opnieuw.' : 'An error occurred. Please try again.';
+    
+    notification.innerHTML = `
+        <i class="fas fa-exclamation-triangle"></i>
+        <span data-nl="Er is een fout opgetreden. Probeer het opnieuw." data-en="An error occurred. Please try again.">${text}</span>
+    `;
+    
+    document.body.appendChild(notification);
+    setTimeout(() => notification.classList.add('show'), 100);
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => document.body.removeChild(notification), 300);
+    }, 4000);
+}
+
+// Function to show notification when contact form is sent
+function showContactNotification() {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = 'location-notification';
+    notification.innerHTML = `
+        <i class="fas fa-envelope"></i>
+        <span data-nl="Email programma geopend" data-en="Email program opened">Email programma geopend</span>
+    `;
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Show with animation
+    setTimeout(() => notification.classList.add('show'), 100);
+    
+    // Hide and remove after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => document.body.removeChild(notification), 300);
+    }, 3000);
 }
 
 // Export for potential module use

@@ -6,6 +6,7 @@
     <title data-nl="Stitching Dutch Heritage" data-en="Stitching Dutch Heritage">Stitching Dutch Heritage</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -55,21 +56,21 @@
             <div class="container">
                 <div class="hero-split">
                     <div class="hero-content">
-                        <h1 class="hero-title" data-nl="Welkom bij Stitching Dutch Heritage" data-en="Welcome to Stitching Dutch Heritage">Welkom bij Stitching Dutch Heritage</h1>
+                        <h1 class="hero-title" data-nl="Welkom bij <span class='highlight-brand'>Stitching Dutch Heritage</span>" data-en="Welcome to <span class='highlight-brand'>Stitching Dutch Heritage</span>">Welkom bij <span class="highlight-brand">Stitching Dutch Heritage</span></h1>
                         <p class="hero-subtitle" data-nl="De plek waar oude hollande borduurtradities herleven." data-en="The place where old Dutch embroidery traditions come to life.">De plek waar oude hollande borduurtradities herleven.</p>
                         
                         <div class="hero-highlights">
-                            <div class="highlight-item">
+                            <div class="highlight-item clickable-location" onclick="openGoogleMaps()">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <span data-nl="Folkloredag Zaanse Schans" data-en="Folklore day Zaanse Schans">Folkloredag Zaanse Schans</span>
                             </div>
-                            <div class="highlight-item">
+                            <div class="highlight-item clickable-calendar" onclick="downloadCalendarEvent()">
                                 <i class="fas fa-calendar-alt"></i>
                                 <span data-nl="16 augustus 2025" data-en="August 16, 2025">16 augustus 2025</span>
                             </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-heart"></i>
-                                <span data-nl="Authentieke patronen" data-en="Authentic patterns">Authentieke patronen</span>
+                            <div class="highlight-item clickable-contact" onclick="openContactForm()">
+                                <i class="fas fa-envelope"></i>
+                                <span data-nl="Contact" data-en="Contact">Contact</span>
                             </div>
                         </div>
                         
@@ -263,6 +264,48 @@ Het resultaat is een collectie die niet alleen mooi is om naar te kijken, maar o
             <p>&copy; 2025 Stitching Dutch Heritage</p>
         </div>
     </footer>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-modal-content">
+            <div class="contact-modal-header">
+                <h3 data-nl="Contact formulier" data-en="Contact form">Contact formulier</h3>
+                <span class="contact-close" onclick="closeContactForm()">&times;</span>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="contactName" data-nl="Naam" data-en="Name">Naam *</label>
+                    <input type="text" id="contactName" name="name" required minlength="2" maxlength="50">
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail" data-nl="Email" data-en="Email">Email *</label>
+                    <input type="email" id="contactEmail" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="contactSubject" data-nl="Onderwerp" data-en="Subject">Onderwerp *</label>
+                    <input type="text" id="contactSubject" name="subject" required minlength="3" maxlength="100">
+                    <div class="error-message" id="subjectError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage" data-nl="Bericht" data-en="Message">Bericht *</label>
+                    <textarea id="contactMessage" name="message" rows="5" required minlength="10" maxlength="1000"></textarea>
+                    <div class="char-count"><span id="messageCount">0</span>/1000</div>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" onclick="closeContactForm()" data-nl="Annuleren" data-en="Cancel">Annuleren</button>
+                    <button type="submit" class="btn-primary" id="submitBtn">
+                        <span class="btn-text" data-nl="Versturen" data-en="Send">Versturen</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> <span data-nl="Versturen..." data-en="Sending...">Versturen...</span>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="js/embroideryData.js"></script>
     <script src="js/main.js"></script>
