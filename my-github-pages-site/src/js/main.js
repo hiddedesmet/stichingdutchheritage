@@ -57,7 +57,12 @@ class StitchingDutchHeritage {
         elements.forEach(element => {
             const text = element.getAttribute(`data-${language}`);
             if (text) {
-                element.textContent = text;
+                // Use innerHTML for elements that contain HTML markup (like spans)
+                if (text.includes('<span') || text.includes('</span>')) {
+                    element.innerHTML = text;
+                } else {
+                    element.textContent = text;
+                }
             }
         });
 
