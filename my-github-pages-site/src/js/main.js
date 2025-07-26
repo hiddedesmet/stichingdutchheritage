@@ -986,52 +986,93 @@ function openGoogleMaps() {
     }, 2500); // 2.5 seconds delay to show notification first
 }
 
-// Global function for downloading calendar event
+// Global function for adding calendar event
 function downloadCalendarEvent() {
     // Event details
     const eventTitle = 'Folkloredag Zaanse Schans';
     const eventDescription = 'Stitching Dutch Heritage - De plek waar oude hollande borduurtradities herleven.';
     const eventLocation = 'Zaanse Schans, Nederland';
     
-    // Date: August 16, 2025, 09:00 - 17:00 (UTC format for ICS)
+    // Date: August 16, 2025, 09:00 - 17:00
     const startDate = '20250816T090000';
     const endDate = '20250816T170000';
     
-    // Generate unique ID for the event
-    const eventId = 'folkloredag-2025-' + new Date().getTime() + '@stitchingdutchheritage.nl';
+    // Check if it's a mobile device
+    const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
-    // Create ICS content
-    const icsContent = [
-        'BEGIN:VCALENDAR',
-        'VERSION:2.0',
-        'PRODID:-//Stitching Dutch Heritage//Folkloredag//NL',
-        'CALSCALE:GREGORIAN',
-        'BEGIN:VEVENT',
-        `UID:${eventId}`,
-        `DTSTART:${startDate}`,
-        `DTEND:${endDate}`,
-        `SUMMARY:${eventTitle}`,
-        `DESCRIPTION:${eventDescription}`,
-        `LOCATION:${eventLocation}`,
-        'STATUS:CONFIRMED',
-        'SEQUENCE:0',
-        'END:VEVENT',
-        'END:VCALENDAR'
-    ].join('\r\n');
-    
-    // Create download link
-    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
-    const link = document.createElement('a');
-    link.href = window.URL.createObjectURL(blob);
-    link.download = 'folkloredag-zaanse-schans-2025.ics';
-    
-    // Trigger download
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    
-    // Show notification
-    showCalendarNotification();
+    if (isMobile) {
+        // For mobile devices, create a calendar URL that opens in the default calendar app
+        const startDateFormatted = '20250816T090000Z';
+        const endDateFormatted = '20250816T170000Z';
+        
+        // Create Google Calendar URL (works on most mobile devices)
+        const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${startDateFormatted}/${endDateFormatted}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(eventLocation)}`;
+        
+        // For iOS devices, also try the native calendar protocol
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        
+        if (isIOS) {
+            // Try iOS calendar URL first
+            const iosCalendarUrl = `calshow:${Math.floor(new Date('2025-08-16T09:00:00').getTime() / 1000)}`;
+            
+            // Create a fallback approach for iOS
+            const tempLink = document.createElement('a');
+            tempLink.href = iosCalendarUrl;
+            tempLink.style.display = 'none';
+            document.body.appendChild(tempLink);
+            
+            // Try to open iOS calendar, fallback to Google Calendar
+            try {
+                tempLink.click();
+                setTimeout(() => document.body.removeChild(tempLink), 100);
+            } catch (e) {
+                document.body.removeChild(tempLink);
+                window.open(googleCalendarUrl, '_blank');
+            }
+        } else {
+            // For Android and other mobile devices, use Google Calendar
+            window.open(googleCalendarUrl, '_blank');
+        }
+        
+        // Show mobile-appropriate notification
+        showMobileCalendarNotification();
+        
+    } else {
+        // For desktop, create and download ICS file
+        const eventId = 'folkloredag-2025-' + new Date().getTime() + '@stitchingdutchheritage.nl';
+        
+        const icsContent = [
+            'BEGIN:VCALENDAR',
+            'VERSION:2.0',
+            'PRODID:-//Stitching Dutch Heritage//Folkloredag//NL',
+            'CALSCALE:GREGORIAN',
+            'BEGIN:VEVENT',
+            `UID:${eventId}`,
+            `DTSTART:${startDate}`,
+            `DTEND:${endDate}`,
+            `SUMMARY:${eventTitle}`,
+            `DESCRIPTION:${eventDescription}`,
+            `LOCATION:${eventLocation}`,
+            'STATUS:CONFIRMED',
+            'SEQUENCE:0',
+            'END:VEVENT',
+            'END:VCALENDAR'
+        ].join('\r\n');
+        
+        // Create download link
+        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+        const link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.download = 'folkloredag-zaanse-schans-2025.ics';
+        
+        // Trigger download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        // Show desktop notification
+        showCalendarNotification();
+    }
 }
 
 // Function to show notification when map is opened
@@ -1062,7 +1103,7 @@ function showLocationNotification() {
     }, 3000);
 }
 
-// Function to show notification when calendar is downloaded
+// Function to show notification when calendar is downloaded (desktop)
 function showCalendarNotification() {
     // Create notification element
     const notification = document.createElement('div');
@@ -1075,6 +1116,34 @@ function showCalendarNotification() {
     notification.innerHTML = `
         <i class="fas fa-calendar-download"></i>
         <span data-nl="Agenda bestand gedownload" data-en="Calendar file downloaded">${text}</span>
+    `;
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Show with animation
+    setTimeout(() => notification.classList.add('show'), 100);
+    
+    // Hide and remove after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => document.body.removeChild(notification), 300);
+    }, 3000);
+}
+
+// Function to show notification when calendar is opened on mobile
+function showMobileCalendarNotification() {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = 'location-notification';
+    
+    // Get current language
+    const currentLang = window.stitchingApp ? window.stitchingApp.currentLanguage : 'nl';
+    const text = currentLang === 'nl' ? 'Agenda app geopend' : 'Calendar app opened';
+    
+    notification.innerHTML = `
+        <i class="fas fa-calendar-plus"></i>
+        <span data-nl="Agenda app geopend" data-en="Calendar app opened">${text}</span>
     `;
     
     // Add to page

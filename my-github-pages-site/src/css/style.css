@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.7;
@@ -15,6 +20,9 @@ body {
     background-color: #fefefe;
     font-size: 16px;
     transition: overflow 0.3s ease;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 /* Prevent body scroll when menu is open */
@@ -1078,8 +1086,15 @@ body.menu-open {
 }
 
 @media (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+    
     .hero-visual {
         padding: 2rem 0;
+        overflow-x: hidden;
     }
     
     .hero-split {
@@ -1107,6 +1122,9 @@ body.menu-open {
         grid-template-columns: 1fr 1fr;
         gap: 0.8rem;
         margin-bottom: 1.5rem;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     .hero-highlights .highlight-item:last-child {
@@ -1125,6 +1143,8 @@ body.menu-open {
         min-width: auto;
         border-left: none;
         border-top: 3px solid #1a4d20;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     .highlight-item i {
@@ -1142,6 +1162,12 @@ body.menu-open {
         font-size: 0.9rem;
     }
     
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+    
     .highlight-item {
         padding: 0.6rem 1rem;
         flex-direction: column;
@@ -1157,6 +1183,12 @@ body.menu-open {
 
 /* Extra small screens */
 @media (max-width: 375px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+    
     .hero-visual {
         padding: 1.5rem 0;
     }
@@ -1185,11 +1217,19 @@ body.menu-open {
     
     .container {
         padding: 0 15px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
 /* Very small screens */
 @media (max-width: 320px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+    
     .hero-visual {
         padding: 1rem 0;
     }
@@ -1218,6 +1258,8 @@ body.menu-open {
     
     .container {
         padding: 0 10px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
