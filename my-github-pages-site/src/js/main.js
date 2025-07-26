@@ -990,47 +990,69 @@ function openGoogleMaps() {
 function downloadCalendarEvent() {
     // Event details
     const eventTitle = 'Folkloredag Zaanse Schans';
-    const eventDescription = 'Stitching Dutch Heritage - De plek waar oude hollande borduurtradities herleven.';
-    const eventLocation = 'Zaanse Schans, Nederland';
-    
-    // Date: August 16, 2025, 09:00 - 17:00
-    const startDate = '20250816T090000';
-    const endDate = '20250816T170000';
+    const eventDescription = 'Bezoek de Folkloredag in de Zaanse Schans en ontdek de rijke Nederlandse borduurtraditie. Een unieke gelegenheid om traditionele technieken te leren en authentieke handwerken te bewonderen.';
+    const eventLocation = 'Zaanse Schans, Schansend 7, 1509 AW Zaandam, Nederland';
     
     // Check if it's a mobile device
     const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
     if (isMobile) {
-        // For mobile devices, create a calendar URL that opens in the default calendar app
-        const startDateFormatted = '20250816T090000Z';
-        const endDateFormatted = '20250816T170000Z';
+        // For mobile devices, create calendar URLs that add the event directly
+        const startDateFormatted = '20250816T070000Z'; // 9:00 AM local time in UTC
+        const endDateFormatted = '20250816T150000Z';   // 5:00 PM local time in UTC
         
-        // Create Google Calendar URL (works on most mobile devices)
-        const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${startDateFormatted}/${endDateFormatted}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(eventLocation)}`;
-        
-        // For iOS devices, also try the native calendar protocol
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        const isAndroid = /Android/i.test(navigator.userAgent);
         
         if (isIOS) {
-            // Try iOS calendar URL first
-            const iosCalendarUrl = `calshow:${Math.floor(new Date('2025-08-16T09:00:00').getTime() / 1000)}`;
+            // For iOS, use data URL to create ICS content that opens in Calendar app
+            const icsContent = [
+                'BEGIN:VCALENDAR',
+                'VERSION:2.0',
+                'PRODID:-//Stitching Dutch Heritage//Folkloredag//NL',
+                'CALSCALE:GREGORIAN',
+                'BEGIN:VEVENT',
+                `UID:folkloredag-2025-${Date.now()}@stitchingdutchheritage.nl`,
+                `DTSTART:${startDateFormatted}`,
+                `DTEND:${endDateFormatted}`,
+                `SUMMARY:${eventTitle}`,
+                `DESCRIPTION:${eventDescription}`,
+                `LOCATION:${eventLocation}`,
+                'STATUS:CONFIRMED',
+                'SEQUENCE:0',
+                'END:VEVENT',
+                'END:VCALENDAR'
+            ].join('\r\n');
             
-            // Create a fallback approach for iOS
-            const tempLink = document.createElement('a');
-            tempLink.href = iosCalendarUrl;
-            tempLink.style.display = 'none';
-            document.body.appendChild(tempLink);
+            // Create data URL for iOS
+            const dataUrl = 'data:text/calendar;charset=utf8,' + encodeURIComponent(icsContent);
+            window.open(dataUrl, '_blank');
             
-            // Try to open iOS calendar, fallback to Google Calendar
+        } else if (isAndroid) {
+            // For Android, use intent URL to open calendar app
+            const startTime = new Date('2025-08-16T09:00:00+02:00').getTime();
+            const endTime = new Date('2025-08-16T17:00:00+02:00').getTime();
+            
+            const intentUrl = `intent://calendar/0#Intent;` +
+                `action=android.intent.action.INSERT;` +
+                `type=vnd.android.cursor.item/event;` +
+                `S.title=${encodeURIComponent(eventTitle)};` +
+                `S.description=${encodeURIComponent(eventDescription)};` +
+                `S.eventLocation=${encodeURIComponent(eventLocation)};` +
+                `l.beginTime=${startTime};` +
+                `l.endTime=${endTime};` +
+                `end`;
+                
             try {
-                tempLink.click();
-                setTimeout(() => document.body.removeChild(tempLink), 100);
+                window.location.href = intentUrl;
             } catch (e) {
-                document.body.removeChild(tempLink);
+                // Fallback to Google Calendar
+                const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${startDateFormatted}/${endDateFormatted}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(eventLocation)}&openExternalBrowser=1`;
                 window.open(googleCalendarUrl, '_blank');
             }
         } else {
-            // For Android and other mobile devices, use Google Calendar
+            // For other mobile devices, use Google Calendar
+            const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${startDateFormatted}/${endDateFormatted}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(eventLocation)}&openExternalBrowser=1`;
             window.open(googleCalendarUrl, '_blank');
         }
         
@@ -1039,6 +1061,8 @@ function downloadCalendarEvent() {
         
     } else {
         // For desktop, create and download ICS file
+        const startDate = '20250816T070000Z';
+        const endDate = '20250816T150000Z';
         const eventId = 'folkloredag-2025-' + new Date().getTime() + '@stitchingdutchheritage.nl';
         
         const icsContent = [
