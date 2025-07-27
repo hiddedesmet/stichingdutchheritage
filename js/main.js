@@ -1282,7 +1282,7 @@ function validateContactForm(formData) {
 function initializeEmailJS() {
     // Initialize EmailJS with your public key
     // You'll need to replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
-    emailjs.init('YOUR_PUBLIC_KEY');
+    emailjs.init('7NmnNpfZPod7f8A2e');
 }
 
 // Handle contact form submission with EmailJS
@@ -1303,7 +1303,7 @@ async function submitContactForm(formData) {
     try {
         // Send email using EmailJS
         // You'll need to replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS IDs
-        const response = await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+        const response = await emailjs.send('service_5jndvge', 'template_nj50uma', {
             from_name: formData.name,
             from_email: formData.email,
             subject: formData.subject,

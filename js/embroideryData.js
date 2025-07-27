@@ -250,7 +250,7 @@ window.EMBROIDERY_DATA = [
   },
   {
     "image": "14.JPEG",
-    "category": "delfts",
+    "category": "koninklijk",
     "subcategory": "postzegel-borduurwerken",
     "titleNL": "Postzegel 45 cent – Koningin Juliana",
     "titleEN": "Postage Stamp 45 Cents – Queen Juliana",
@@ -272,7 +272,7 @@ window.EMBROIDERY_DATA = [
   },
   {
     "image": "15.JPEG",
-    "category": "delfts",
+    "category": "koninklijk",
     "subcategory": "postzegel-borduurwerken",
     "titleNL": "Postzegel 10 cent – Koningin Wilhelmina",
     "titleEN": "Postage Stamp 10 Cents – Queen Wilhelmina",
@@ -891,7 +891,7 @@ window.EMBROIDERY_DATA = [
   },
   {
     "image": "41.JPEG",
-    "category": "stadsgezichten",
+    "category": "molens",
     "subcategory": "algemeen-stadsgezicht",
     "titleNL": "Watermolen in Holland",
     "titleEN": "Watermill in Holland",
