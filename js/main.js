@@ -906,9 +906,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Initialize EmailJS
-    initializeEmailJS();
-    
     // Close modal when clicking outside
     const contactModal = document.getElementById('contactModal');
     if (contactModal) {
@@ -1285,7 +1282,7 @@ function initializeEmailJS() {
     emailjs.init('7NmnNpfZPod7f8A2e');
 }
 
-// Handle contact form submission with EmailJS
+// Handle contact form submission with Formspree
 async function submitContactForm(formData) {
     if (!validateContactForm(formData)) {
         return;
@@ -1301,22 +1298,26 @@ async function submitContactForm(formData) {
     btnLoading.style.display = 'flex';
     
     try {
-        // Send email using EmailJS
-        // You'll need to replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS IDs
-        const response = await emailjs.send('service_5jndvge', 'template_nj50uma', {
-            from_name: formData.name,
-            from_email: formData.email,
-            subject: formData.subject,
-            message: formData.message,
-            to_email: 'desmet.hidde@gmail.com'
+        // Send email using Formspree
+        const response = await fetch('https://formspree.io/f/xpwlrzzp', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                subject: formData.subject,
+                message: formData.message
+            })
         });
         
-        if (response.status === 200) {
+        if (response.ok) {
             // Success
             closeContactForm();
             showContactSuccessNotification();
         } else {
-            throw new Error('Email service responded with error');
+            throw new Error('Form submission failed');
         }
     } catch (error) {
         console.error('Error sending email:', error);
