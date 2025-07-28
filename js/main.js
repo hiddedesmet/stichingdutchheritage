@@ -2,7 +2,7 @@
 
 class StitchingDutchHeritage {
     constructor() {
-        this.currentLanguage = 'nl';
+        this.currentLanguage = 'en';
         this.embroideryData = [];
         this.currentImageIndex = 0;
         this.filteredData = [];
@@ -746,16 +746,22 @@ class StitchingDutchHeritage {
         const savedLang = localStorage.getItem('stitching-heritage-lang');
         const browserLang = navigator.language.slice(0, 2);
         
-        let initialLang = 'nl'; // Default to Dutch
+        let initialLang = 'en'; // Default to English
         
         if (savedLang && (savedLang === 'nl' || savedLang === 'en')) {
             initialLang = savedLang;
-        } else if (browserLang === 'en') {
-            initialLang = 'en';
+        } else if (browserLang === 'nl') {
+            initialLang = 'nl';
         }
         
         // Set initial language
-        if (initialLang !== 'nl') {
+        if (initialLang !== 'en') {
+            const nlButton = document.querySelector('[data-lang="nl"]');
+            if (nlButton) {
+                nlButton.click();
+            }
+        } else {
+            // Ensure English is set as default
             const enButton = document.querySelector('[data-lang="en"]');
             if (enButton) {
                 enButton.click();

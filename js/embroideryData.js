@@ -1,5 +1,5 @@
 // Auto-generated embroidery data from markdown files
-// Generated on 2025-07-28T08:37:28.491Z
+// Generated on 2025-07-28T10:21:53.965Z
 
 window.EMBROIDERY_DATA = [
   {
@@ -1195,8 +1195,8 @@ window.EMBROIDERY_DATA = [
     "titleEN": "Fruit Bowl in Delft Blue",
     "descriptionNL": "Delftsblauwe tegels vormen een iconisch onderdeel van het Nederlandse erfgoed en worden al sinds de 17e eeuw vervaardigd. Dit borduurwerk brengt deze traditie tot leven met een afbeelding van een decoratieve schaal gevuld met bloemen en vruchten, omlijst door karakteristieke siermotieven.\n\nOorspronkelijk werden Delftsblauwe tegels met de hand beschilderd en sierden ze de wanden van huizen, schouwen en openbare gebouwen. De diepe blauwtinten op een witte achtergrond waren geïnspireerd door Chinees porselein en groeiden uit tot een geliefd decoratief element.\n\nDe verfijnde kruissteektechniek in dit borduurwerk vertaalt het traditionele tegelontwerp naar textielkunst en eert zowel de ambachtelijke traditie van de Nederlandse tegelproductie als de blijvende invloed van Delftsblauw in interieurs en kunst.\n\n---",
     "descriptionEN": "Delft Blue tiles are an iconic part of Dutch heritage and have been crafted since the 17th century. This embroidery brings this tradition to life with an image of a decorative fruit bowl, framed by characteristic ornamental motifs.\n\nOriginally, Delft Blue tiles were hand-painted and adorned the walls of homes, fireplaces, and public buildings. The deep blue tones on a white background were inspired by Chinese porcelain and evolved into a beloved decorative element. Designs featuring fruit bowls and floral arrangements were common in tiles and ceramics, symbolizing prosperity, abundance, and domestic harmony.\n\nThe refined cross-stitch technique in this embroidery translates the traditional tile design into textile art, honoring both the artisanal tradition of Dutch tile production and the lasting influence of Delft Blue in interiors and decorative arts.",
-    "dimensions": "25x30 cm",
-    "price": "",
+    "dimensions": "18x18 cm",
+    "price": "€15",
     "technique": "kruissteek",
     "year": "17e eeuw",
     "tags": [
@@ -1219,8 +1219,8 @@ window.EMBROIDERY_DATA = [
     "titleEN": "Tulips in Delft Blue",
     "descriptionNL": "Delftsblauwe tegels vormen een iconisch onderdeel van het Nederlandse erfgoed en worden al sinds de 17e eeuw vervaardigd. Dit borduurwerk brengt deze traditie tot leven met een afbeelding van tulpen, de nationale bloem van Nederland en een symbool van welvaart en culturele uitwisseling.\n\nOorspronkelijk werden Delftsblauwe tegels met de hand beschilderd en sierden ze de wanden van huizen, schouwen en openbare gebouwen. De diepe blauwtinten op een witte achtergrond waren geïnspireerd door Chinees porselein en groeiden uit tot een tijdloos decoratief element.\n\nDe tulp in dit borduurwerk verwijst naar de beroemde tulpenmanie in de 17e eeuw, toen de bloem een statussymbool werd en Nederland wereldwijd bekendheid gaf als centrum van de bloembollenteelt.\n\n---",
     "descriptionEN": "Delft Blue tiles are an iconic part of Dutch heritage and have been crafted since the 17th century. This embroidery brings this tradition to life with an image of tulips, the national flower of the Netherlands and a symbol of prosperity and cultural exchange.\n\nOriginally, Delft Blue tiles were hand-painted and adorned the walls of homes, fireplaces, and public buildings. The deep blue tones on a white background were inspired by Chinese porcelain and evolved into a timeless decorative element. Floral motifs, such as the tulip, were especially popular and reflected the great influence of the tulip trade during the Golden Age.\n\nThe tulip in this embroidery refers to the famous Tulip Mania of the 17th century, when the flower became a status symbol and helped establish the Netherlands as a global center of flower cultivation.",
-    "dimensions": "25x30 cm",
-    "price": "",
+    "dimensions": "18x18 cm",
+    "price": "€15",
     "technique": "Kruissteek",
     "year": "17e eeuw",
     "tags": [
@@ -1243,8 +1243,8 @@ window.EMBROIDERY_DATA = [
     "titleEN": "Zaanse Windmill",
     "descriptionNL": "De Zaanse Schans is een levend monument van Nederlands erfgoed, een plek waar de molens en ambachtshuizen de geschiedenis tastbaar maken. Dit borduurwerk toont een iconische windmolen, die eeuwenlang symbool stond voor innovatie en vakmanschap in de Zaanstreek. De Zaanstreek was in de 17e en 18e eeuw een van de eerste industriegebieden ter wereld, waar honderden molens zorgden voor de verwerking van hout, olie, graan en andere grondstoffen.\n\nMet de opkomst van moderne technieken verdwenen veel molens, maar dankzij behoud en restauratie blijft de Zaanse Schans een plek waar deze bijzondere bouwwerken in volle glorie te bewonderen zijn. Dit borduurwerk vangt niet alleen het landschap, maar ook de geest van een tijdperk waarin windenergie de drijvende kracht was achter de Hollandse handelsgeest.\n\n---",
     "descriptionEN": "The Zaanse Schans is a living monument of Dutch heritage—a place where windmills and traditional craft houses bring history to life. This embroidery depicts an iconic windmill, a symbol of innovation and craftsmanship in the Zaan region for centuries. In the 17th and 18th centuries, the Zaan area was one of the world's first industrial zones, where hundreds of mills processed wood, oil, grain, and other raw materials.\n\nWith the rise of modern technology, many windmills disappeared, but thanks to preservation and restoration efforts, the Zaanse Schans remains a place where these remarkable structures can be admired in their full glory. This embroidery captures not just the landscape, but also the spirit of an era in which wind power fueled the enterprising Dutch spirit.",
-    "dimensions": "25x30 cm",
-    "price": "",
+    "dimensions": "20x32 cm",
+    "price": "€20",
     "technique": "Kruissteek",
     "year": "17e-18e eeuw",
     "tags": [
@@ -1265,8 +1265,8 @@ window.EMBROIDERY_DATA = [
     "titleEN": "Zaanse Windmill",
     "descriptionNL": "De Zaanse Schans is een levend monument van Nederlands erfgoed, een plek waar de molens en ambachtshuizen de geschiedenis tastbaar maken. Dit borduurwerk toont een iconische windmolen, die eeuwenlang symbool stond voor innovatie en vakmanschap in de Zaanstreek. De Zaanstreek was in de 17e en 18e eeuw een van de eerste industriegebieden ter wereld, waar honderden molens zorgden voor de verwerking van hout, olie, graan en andere grondstoffen.\n\nMet de opkomst van moderne technieken verdwenen veel molens, maar dankzij behoud en restauratie blijft de Zaanse Schans een plek waar deze bijzondere bouwwerken in volle glorie te bewonderen zijn. Dit borduurwerk vangt niet alleen het landschap, maar ook de geest van een tijdperk waarin windenergie de drijvende kracht was achter de Hollandse handelsgeest.\n\n---",
     "descriptionEN": "The Zaanse Schans is a living monument of Dutch heritage—a place where windmills and traditional craft houses bring history to life. This embroidery depicts an iconic windmill, a symbol of innovation and craftsmanship in the Zaan region for centuries. In the 17th and 18th centuries, the Zaan area was one of the world's first industrial zones, where hundreds of mills processed wood, oil, grain, and other raw materials.\n\nWith the rise of modern technology, many windmills disappeared, but thanks to preservation and restoration efforts, the Zaanse Schans remains a place where these remarkable structures can be admired in their full glory. This embroidery captures not just the landscape, but also the spirit of an era in which wind power fueled the enterprising Dutch spirit.",
-    "dimensions": "25x30 cm",
-    "price": "",
+    "dimensions": "27x34 cm",
+    "price": "€20",
     "technique": "Kruissteek",
     "year": "17e-18e eeuw",
     "tags": [
@@ -1287,8 +1287,8 @@ window.EMBROIDERY_DATA = [
     "titleEN": "Zaanse Windmill",
     "descriptionNL": "De Zaanse Schans is een levend monument van Nederlands erfgoed, een plek waar de molens en ambachtshuizen de geschiedenis tastbaar maken. Dit borduurwerk toont een iconische windmolen, die eeuwenlang symbool stond voor innovatie en vakmanschap in de Zaanstreek. De Zaanstreek was in de 17e en 18e eeuw een van de eerste industriegebieden ter wereld, waar honderden molens zorgden voor de verwerking van hout, olie, graan en andere grondstoffen.\n\nMet de opkomst van moderne technieken verdwenen veel molens, maar dankzij behoud en restauratie blijft de Zaanse Schans een plek waar deze bijzondere bouwwerken in volle glorie te bewonderen zijn. Dit borduurwerk vangt niet alleen het landschap, maar ook de geest van een tijdperk waarin windenergie de drijvende kracht was achter de Hollandse handelsgeest.\n\n---",
     "descriptionEN": "The Zaanse Schans is a living monument of Dutch heritage—a place where windmills and traditional craft houses bring history to life. This embroidery depicts an iconic windmill, a symbol of innovation and craftsmanship in the Zaan region for centuries. In the 17th and 18th centuries, the Zaan area was one of the world's first industrial zones, where hundreds of mills processed wood, oil, grain, and other raw materials.\n\nWith the rise of modern technology, many windmills disappeared, but thanks to preservation and restoration efforts, the Zaanse Schans remains a place where these remarkable structures can be admired in their full glory. This embroidery captures not just the landscape, but also the spirit of an era in which wind power fueled the enterprising Dutch spirit.",
-    "dimensions": "25x30 cm",
-    "price": "",
+    "dimensions": "37x33 cm",
+    "price": "€25",
     "technique": "Kruissteek",
     "year": "17e-18e eeuw",
     "tags": [
@@ -1309,8 +1309,8 @@ window.EMBROIDERY_DATA = [
     "titleEN": "ABC by Dick Bruna",
     "descriptionNL": "Met sprankelende steken transformeert dit borduurwerk Dick Bruna's iconische ABC in tastbaar textiel: heldere kleurvlakken, krachtige contouren en vertederende figuren die meteen vertrouwd aanvoelen. De compositie ademt het optimisme van de jaren zestig, toen Bruna met minimale vormen en primaire kleuren de verbeelding van jonge lezers wist te vangen.\n\nLinksboven prijkt het titelvak \"b is een beer – abc van dick bruna\", een directe verwijzing naar het bekroonde prentenboek uit 1962 dat generaties kinderen de eerste letters leerde.\n\nMet zijn vrolijke kleurpalet en tijdloze vormtaal vangt dit borduurwerk de essentie van Bruna's less is more filosofie. Het wekt de nostalgie op van voorleesmomenten en klaslokalen vol verwondering, en vereeuwigt een stukje Nederlandse illustratie geschiedenis in draad.\n\n---",
     "descriptionEN": "Stitched with lively precision, this embroidery turns Dick Bruna's iconic ABC into tangible textile. Bright blocks of colour, bold outlines and endearing characters mingle in a composition that exudes the optimism of the 1960s, when Bruna captured young readers' imaginations with primary hues and pared down shapes.\n\nIn the upper left corner, the title panel \"b is een beer – abc van dick bruna\" gleams—a direct nod to the award winning 1962 picture book that taught generations of children their first letters.\n\nWith its cheerful colour palette and timeless visual language, the piece embodies Bruna's less is more philosophy. It conjures memories of story time moments and classrooms filled with wonder, immortalising a slice of Dutch illustration history in thread.",
-    "dimensions": "25x30 cm",
-    "price": "",
+    "dimensions": "95x56 cm",
+    "price": "€45",
     "technique": "Kruissteek",
     "year": "1962",
     "tags": [
