@@ -1,5 +1,5 @@
 // Auto-generated embroidery data from markdown files
-// Generated on 2025-07-28T08:29:20.916Z
+// Generated on 2025-07-28T08:37:28.491Z
 
 window.EMBROIDERY_DATA = [
   {
@@ -250,8 +250,8 @@ window.EMBROIDERY_DATA = [
   },
   {
     "image": "14.JPEG",
-    "category": "delfts",
-    "subcategory": "postzegel-borduurwerken",
+    "category": "koninklijk",
+    "subcategory": "wapens-deviezen",
     "titleNL": "Postzegel 45 cent – Koningin Juliana",
     "titleEN": "Postage Stamp 45 Cents – Queen Juliana",
     "descriptionNL": "Dit borduurwerk is gebaseerd op een iconische Nederlandse postzegel met het portret van Koningin Juliana, die het land regeerde van 1948 tot 1980. Haar beeltenis werd veelvuldig gebruikt op postzegels, vaak in sobere, gestileerde vorm, wat haar imago van nabijheid en eenvoud onderstreepte. Deze uiting van filatelistische kunst brengt een stukje vaderlandse geschiedenis in textiel tot leven.\n\nPostzegels dienden niet alleen als betaalmiddel voor postverkeer, maar waren ook een middel om nationale trots en grafisch vakmanschap tot uiting te brengen.\n\nDit borduurwerk brengt de geschiedenis van het Nederlandse koningshuis en de traditie van postzegelverzameling op artistieke wijze tot leven. Het verbindt filatelie en handwerk, twee verzamelculturen die in Nederland een rijke historie kennen.",
@@ -263,6 +263,7 @@ window.EMBROIDERY_DATA = [
     "tags": [
       "filatelie",
       "juliana",
+      "koning",
       "koningin",
       "philately",
       "postage stamp",
@@ -272,8 +273,8 @@ window.EMBROIDERY_DATA = [
   },
   {
     "image": "15.JPEG",
-    "category": "delfts",
-    "subcategory": "postzegel-borduurwerken",
+    "category": "koninklijk",
+    "subcategory": "wapens-deviezen",
     "titleNL": "Postzegel 10 cent – Koningin Wilhelmina",
     "titleEN": "Postage Stamp 10 Cents – Queen Wilhelmina",
     "descriptionNL": "Dit borduurwerk is geïnspireerd op een klassieke Nederlandse postzegel met het portret van Koningin Wilhelmina, een vorstin die bijna zestig jaar lang het land regeerde. Haar beeld op postzegels symboliseert niet alleen de monarchie, maar ook een periode van grote veranderingen en historische gebeurtenissen in Nederland, waaronder beide wereldoorlogen.\n\nDe postzegel met een nominale waarde van 10 cent toont Wilhelmina in een gestileerde, herkenbare vorm, zoals zij op vele postzegels is afgebeeld. Postzegels waren ooit een essentieel communicatiemiddel en vormden daarnaast een geliefd verzamelobject, waarin nationale trots en grafisch ontwerp samenkwamen.\n\nDit borduurwerk eert zowel de geschiedenis van het Nederlandse koningshuis als de traditie van filatelie, waarin iconische postzegels werden vereeuwigd als waardevolle erfstukken.",
@@ -284,6 +285,7 @@ window.EMBROIDERY_DATA = [
     "year": "2024",
     "tags": [
       "filatelie",
+      "koning",
       "koningin",
       "philately",
       "postage stamp",
@@ -364,32 +366,6 @@ window.EMBROIDERY_DATA = [
       "landschap",
       "molens",
       "windmills",
-      "zaan",
-      "zaanse",
-      "zaanse schans"
-    ]
-  },
-  {
-    "image": "23.JPEG",
-    "category": "zaanse",
-    "subcategory": "zaanse-schans",
-    "titleNL": "Houten Huisjes van de Zaanstreek",
-    "titleEN": "Wooden Houses of the Zaan Region",
-    "descriptionNL": "De traditionele houten huisjes van de Zaanse Schans zijn een herkenbaar en geliefd onderdeel van het Nederlandse erfgoed. Dit borduurwerk toont de karakteristieke groene gevels, witte kozijnen en sierlijke dakranden die typerend zijn voor deze historische bouwstijl. De Zaanse huisjes weerspiegelen de welvaart en het vakmanschap van de regio, waar molens en ambachtshuizen hand in hand gingen in een bloeiende handelsgemeenschap.\n\nDe Zaanse Schans is niet alleen een museum, maar een levend stukje geschiedenis. De huisjes die hier staan, zijn in de 20e eeuw verzameld en opnieuw opgebouwd om het unieke karakter van de regio te behouden. Dit borduurwerk brengt deze tijdloze schoonheid tot leven en laat zien hoe architectuur en natuur harmonieus samenkomen.",
-    "descriptionEN": "The traditional wooden houses of the Zaanse Schans are a recognizable and cherished part of Dutch heritage. This embroidery captures the distinctive green facades, white window frames, and ornate roof edges that define this historic architectural style. The Zaanse houses reflect the prosperity and craftsmanship of the region, where windmills and artisan workshops thrived within a flourishing trade community.\n\nThe Zaanse Schans is not just a museum but a living piece of history. The houses standing there today were carefully relocated and reconstructed in the 20th century to preserve the unique character of the region. This embroidery brings this timeless beauty to life, illustrating how architecture and nature harmoniously coexist.",
-    "dimensions": "19x11 cm",
-    "price": "€20",
-    "technique": "borduurwerk",
-    "year": "2024",
-    "tags": [
-      "architecture",
-      "architectuur",
-      "erfgoed",
-      "heritage",
-      "houten huisjes",
-      "traditional",
-      "traditioneel",
-      "wooden houses",
       "zaan",
       "zaanse",
       "zaanse schans"
@@ -774,33 +750,6 @@ window.EMBROIDERY_DATA = [
       "verandering",
       "vernieuwing",
       "young queen"
-    ]
-  },
-  {
-    "image": "38.JPEG",
-    "category": "stadsgezichten",
-    "subcategory": "iconische-panden",
-    "titleNL": "Paleis op de Dam",
-    "titleEN": "Royal Palace on Dam Square",
-    "descriptionNL": "Het Paleis op de Dam, gelegen in het hart van Amsterdam, is een van de meest imposante en historische gebouwen van Nederland. Dit borduurwerk vangt de grootsheid van dit iconische monument, dat oorspronkelijk werd gebouwd als stadhuis van Amsterdam in de 17e eeuw, tijdens de Gouden Eeuw.\n\nMet zijn indrukwekkende gevel en klassieke architectuur is het paleis een blijvende herinnering aan de welvaart en macht van Amsterdam als wereldhandelsstad. In 1808 werd het stadhuis door Koning Lodewijk Napoleon omgevormd tot een koninklijk paleis, een functie die het tot op de dag van vandaag behoudt.\n\nHet borduurwerk symboliseert de nauwe verwevenheid tussen het koningshuis en de geschiedenis van Nederland.",
-    "descriptionEN": "The Royal Palace on Dam Square, located in the heart of Amsterdam, is one of the most imposing and historic buildings in the Netherlands. This embroidery captures the grandeur of this iconic monument, originally built as Amsterdam's City Hall during the 17th century, in the Dutch Golden Age.\n\nWith its impressive façade and classical architecture, the palace remains a symbol of Amsterdam's wealth and power as a global trading hub. In 1808, King Louis Bonaparte transformed the city hall into a royal palace, a function it continues to serve to this day.\n\nThis embroidery highlights the monumental presence of the palace and symbolizes the deep connection between the Dutch monarchy and the nation's history. The Royal Palace on Dam Square remains a key venue for official royal ceremonies, including state visits and inaugurations.",
-    "dimensions": "27x15 cm",
-    "price": "€30",
-    "technique": "borduurwerk",
-    "year": "2024",
-    "tags": [
-      "amsterdam",
-      "architecture",
-      "architectuur",
-      "dam",
-      "golden age",
-      "gouden eeuw",
-      "koninklijk",
-      "lodewijk napoleon",
-      "louis bonaparte",
-      "palace",
-      "paleis",
-      "royal"
     ]
   },
   {
