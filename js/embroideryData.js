@@ -1,5 +1,5 @@
 // Auto-generated embroidery data from markdown files
-// Generated on 2025-07-28T08:21:43.586Z
+// Generated on 2025-07-28T08:29:20.916Z
 
 window.EMBROIDERY_DATA = [
   {
@@ -1288,8 +1288,8 @@ window.EMBROIDERY_DATA = [
   },
   {
     "image": "56.JPEG",
-    "category": "zaanse",
-    "subcategory": "zaanse-schans",
+    "category": "molens",
+    "subcategory": "molentypen",
     "titleNL": "Zaanse Molen",
     "titleEN": "Zaanse Windmill",
     "descriptionNL": "De Zaanse Schans is een levend monument van Nederlands erfgoed, een plek waar de molens en ambachtshuizen de geschiedenis tastbaar maken. Dit borduurwerk toont een iconische windmolen, die eeuwenlang symbool stond voor innovatie en vakmanschap in de Zaanstreek. De Zaanstreek was in de 17e en 18e eeuw een van de eerste industriegebieden ter wereld, waar honderden molens zorgden voor de verwerking van hout, olie, graan en andere grondstoffen.\n\nMet de opkomst van moderne technieken verdwenen veel molens, maar dankzij behoud en restauratie blijft de Zaanse Schans een plek waar deze bijzondere bouwwerken in volle glorie te bewonderen zijn. Dit borduurwerk vangt niet alleen het landschap, maar ook de geest van een tijdperk waarin windenergie de drijvende kracht was achter de Hollandse handelsgeest.\n\n---",
@@ -1300,19 +1300,18 @@ window.EMBROIDERY_DATA = [
     "year": "17e-18e eeuw",
     "tags": [
       "industrieel erfgoed",
+      "molen",
       "vakmanschap",
       "windenergie",
       "windmolen",
-      "zaan",
-      "zaanse",
       "zaanse schans",
       "zaanstreek"
     ]
   },
   {
     "image": "57.JPEG",
-    "category": "zaanse",
-    "subcategory": "zaanse-schans",
+    "category": "molens",
+    "subcategory": "molentypen",
     "titleNL": "Zaanse Molen",
     "titleEN": "Zaanse Windmill",
     "descriptionNL": "De Zaanse Schans is een levend monument van Nederlands erfgoed, een plek waar de molens en ambachtshuizen de geschiedenis tastbaar maken. Dit borduurwerk toont een iconische windmolen, die eeuwenlang symbool stond voor innovatie en vakmanschap in de Zaanstreek. De Zaanstreek was in de 17e en 18e eeuw een van de eerste industriegebieden ter wereld, waar honderden molens zorgden voor de verwerking van hout, olie, graan en andere grondstoffen.\n\nMet de opkomst van moderne technieken verdwenen veel molens, maar dankzij behoud en restauratie blijft de Zaanse Schans een plek waar deze bijzondere bouwwerken in volle glorie te bewonderen zijn. Dit borduurwerk vangt niet alleen het landschap, maar ook de geest van een tijdperk waarin windenergie de drijvende kracht was achter de Hollandse handelsgeest.\n\n---",
@@ -1323,19 +1322,18 @@ window.EMBROIDERY_DATA = [
     "year": "17e-18e eeuw",
     "tags": [
       "industrieel erfgoed",
+      "molen",
       "vakmanschap",
       "windenergie",
       "windmolen",
-      "zaan",
-      "zaanse",
       "zaanse schans",
       "zaanstreek"
     ]
   },
   {
     "image": "58.JPEG",
-    "category": "zaanse",
-    "subcategory": "zaanse-schans",
+    "category": "molens",
+    "subcategory": "molentypen",
     "titleNL": "Zaanse Molen",
     "titleEN": "Zaanse Windmill",
     "descriptionNL": "De Zaanse Schans is een levend monument van Nederlands erfgoed, een plek waar de molens en ambachtshuizen de geschiedenis tastbaar maken. Dit borduurwerk toont een iconische windmolen, die eeuwenlang symbool stond voor innovatie en vakmanschap in de Zaanstreek. De Zaanstreek was in de 17e en 18e eeuw een van de eerste industriegebieden ter wereld, waar honderden molens zorgden voor de verwerking van hout, olie, graan en andere grondstoffen.\n\nMet de opkomst van moderne technieken verdwenen veel molens, maar dankzij behoud en restauratie blijft de Zaanse Schans een plek waar deze bijzondere bouwwerken in volle glorie te bewonderen zijn. Dit borduurwerk vangt niet alleen het landschap, maar ook de geest van een tijdperk waarin windenergie de drijvende kracht was achter de Hollandse handelsgeest.\n\n---",
@@ -1346,11 +1344,10 @@ window.EMBROIDERY_DATA = [
     "year": "17e-18e eeuw",
     "tags": [
       "industrieel erfgoed",
+      "molen",
       "vakmanschap",
       "windenergie",
       "windmolen",
-      "zaan",
-      "zaanse",
       "zaanse schans",
       "zaanstreek"
     ]

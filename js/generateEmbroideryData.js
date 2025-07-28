@@ -261,6 +261,12 @@ embroideryData = embroideryData.map(item => {
         item.subcategory = determineSubcategory(item.category, item.titleNL, item.descriptionNL);
     }
     
+    // Specific override for images 56, 57, 58 - keep them as molens
+    if (item.image === '56.JPEG' || item.image === '57.JPEG' || item.image === '58.JPEG') {
+        item.category = 'molens';
+        item.subcategory = determineSubcategory('molens', item.titleNL, item.descriptionNL);
+    }
+    
     // Add filter-related tags
     item = addFilterTags(item);
     
