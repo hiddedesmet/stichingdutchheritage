@@ -1,5 +1,5 @@
 // Auto-generated embroidery data from markdown files
-// Generated on 2025-07-25T13:47:01.595Z
+// Generated on 2025-07-28T08:21:43.586Z
 
 window.EMBROIDERY_DATA = [
   {
@@ -8,7 +8,7 @@ window.EMBROIDERY_DATA = [
     "subcategory": "17de-eeuws",
     "titleNL": "Amstelredam 1650",
     "titleEN": "Amsterdam 1650",
-    "descriptionNL": "Dit borduurwerk toont het imposante stadsgezicht van Amsterdam rond 1650, gebaseerd op een gravure van Kaspar Merian uit 1659. De prent maakte deel uit van de reeks Topografia Germania Inferioris en laat een stad zien in volle bloei, met druk scheepvaartverkeer op het IJ en een herkenbare skyline van torens en monumenten.\n\nHet werk brengt op minutieuze wijze de architectonische pracht van de stad in beeld. Gebouwen als de Montelbaanstoren, de Zuiderkerk, de Munttoren en het Oude Stadhuis — nog intact afgebeeld vóór de brand van 1652 — verrijzen uit het linnen met een verbluffend oog voor detail. De skyline weerspiegelt de kracht van de Amsterdamse handelsgeest en de rol van de stad als cultureel en economisch zwaartepunt van de Gouden Eeuw.\n\n---",
+    "descriptionNL": "Dit borduurwerk toont het imposante stadsgezicht van Amsterdam rond 1650, gebaseerd op een gravure van Kaspar Merian uit 1659. De prent maakte deel uit van de reeks Topografia Germania Inferioris en laat een stad zien in volle bloei, met druk scheepvaartverkeer op het IJ en een herkenbare skyline van torens en monumenten.\n\nHet werk brengt op minutieuze wijze de architectonische pracht van de stad in beeld. Gebouwen als de Montelbaanstoren, de Zuiderkerk, de Munttoren en het Oude Stadhuis — nog intact afgebeeld vóór de brand van 1652 — verrijzen uit het linnen met een verbluffend oog voor detail. De skyline weerspiegelt de kracht van de Amsterdamse handelsgeest en de rol van de stad als cultureel en economisch zwaartepunt van de Gouden Eeuw.",
     "descriptionEN": "This embroidery presents an imposing cityscape of Amsterdam around the year 1650, based on a 1659 engraving by Kaspar Merian. The print was part of the Topographia Germania Inferioris series and depicts a city in full bloom, with bustling ship traffic on the IJ and a recognizable skyline of towers and monuments.\n\nThe work meticulously renders the architectural splendour of the city. Buildings such as the Montelbaanstoren, the Zuiderkerk, the Munttoren, and the Old Town Hall—still intact here before the fire of 1652—rise from the linen with remarkable attention to detail. The skyline reflects the strength of Amsterdam's mercantile spirit and its role as a cultural and economic epicentre during the Dutch Golden Age.",
     "dimensions": "82x37 cm",
     "price": "€60",
@@ -27,7 +27,7 @@ window.EMBROIDERY_DATA = [
     "subcategory": "markt-plein",
     "titleNL": "Waterlooplein",
     "titleEN": "Waterlooplein",
-    "descriptionNL": "Dit borduurwerk vangt de levendige sfeer van het Waterlooplein in Amsterdam, een plek die al eeuwenlang een centrum is van handel en ontmoeting. Afgebeeld is een kleurrijke markt, waar koopmannen en bezoekers tussen de kraampjes struinen, op zoek naar bijzondere vondsten. Dit tafereel doet sterk denken aan de bekende vlooienmarkt die hier al sinds de 19e eeuw wordt gehouden en die het plein zijn unieke karakter geeft.\n\nOp de achtergrond prijkt de Mozes en Aäronkerk, een beeldbepalend monument dat niet alleen de skyline van het plein domineert, maar ook een symbool is van de rijke geschiedenis van de stad. De aanwezigheid van marktkramen, lampen, oude boeken en andere curiosa roept de nostalgie op van een tijd waarin handelaren hun waren uitstalde op kleedjes en onder tentzeilen, en onderhandelingen over prijzen plaatsvonden in de schaduw van historische gebouwen.\n\n---",
+    "descriptionNL": "Dit borduurwerk vangt de levendige sfeer van het Waterlooplein in Amsterdam, een plek die al eeuwenlang een centrum is van handel en ontmoeting. Afgebeeld is een kleurrijke markt, waar koopmannen en bezoekers tussen de kraampjes struinen, op zoek naar bijzondere vondsten. Dit tafereel doet sterk denken aan de bekende vlooienmarkt die hier al sinds de 19e eeuw wordt gehouden en die het plein zijn unieke karakter geeft.\n\nOp de achtergrond prijkt de Mozes en Aäronkerk, een beeldbepalend monument dat niet alleen de skyline van het plein domineert, maar ook een symbool is van de rijke geschiedenis van de stad. De aanwezigheid van marktkramen, lampen, oude boeken en andere curiosa roept de nostalgie op van een tijd waarin handelaren hun waren uitstalde op kleedjes en onder tentzeilen, en onderhandelingen over prijzen plaatsvonden in de schaduw van historische gebouwen.",
     "descriptionEN": "This embroidery, Waterlooplein, beautifully captures the vibrant atmosphere of Amsterdam's historic Waterlooplein, a place renowned since the 19th century as home to one of the city's most famous flea markets. The scene portrays merchants and visitors strolling between stalls, searching for unique finds. The lively depiction evokes the market's distinctive charm, a tradition that continues to give the square its unique character today.\n\nIn the background stands the distinctive Mozes en Aäronkerk, a landmark that contributes greatly to the character of the square and symbolizes Amsterdam's historical heritage. The stalls, filled with second-hand items, recall a nostalgic era when traders laid out their goods on blankets and under tent canopies, negotiating prices in the shadow of historic buildings.",
     "dimensions": "44x61 cm",
     "price": "€45",
@@ -47,7 +47,7 @@ window.EMBROIDERY_DATA = [
     "subcategory": "iconische-panden",
     "titleNL": "Zicht op Amsterdam",
     "titleEN": "View of Amsterdam",
-    "descriptionNL": "Dit borduurwerk werd ontworpen ter gelegenheid van het 700-jarig bestaan van Amsterdam en weerspiegelt de karakteristieke architectuur van de stad. De grachtenpanden met hun uiteenlopende gevelvormen – trapgevels, klokgevels en puntgevels – tonen de historische rijkdom en diversiteit van de stad, die door de eeuwen heen een centrum van handel, cultuur en vernieuwing is geweest.\n\nOp de achtergrond verrijzen iconische torens, verwijzend naar de vele kerken en monumentale bouwwerken die de skyline van Amsterdam bepalen. Hoewel het tafereel geen specifieke locatie weergeeft, ademt het geheel de tijdloze sfeer van de Amsterdamse binnenstad, waar historie en moderniteit hand in hand gaan.\n\n---",
+    "descriptionNL": "Dit borduurwerk werd ontworpen ter gelegenheid van het 700-jarig bestaan van Amsterdam en weerspiegelt de karakteristieke architectuur van de stad. De grachtenpanden met hun uiteenlopende gevelvormen – trapgevels, klokgevels en puntgevels – tonen de historische rijkdom en diversiteit van de stad, die door de eeuwen heen een centrum van handel, cultuur en vernieuwing is geweest.\n\nOp de achtergrond verrijzen iconische torens, verwijzend naar de vele kerken en monumentale bouwwerken die de skyline van Amsterdam bepalen. Hoewel het tafereel geen specifieke locatie weergeeft, ademt het geheel de tijdloze sfeer van de Amsterdamse binnenstad, waar historie en moderniteit hand in hand gaan.",
     "descriptionEN": "This embroidery beautifully commemorates the 700th anniversary of Amsterdam. The canal houses with their varied façades—stepped gables, bell gables, and pointed gables—highlight the city's architectural richness and historical diversity. These iconic houses symbolize Amsterdam's long history as a hub of trade, culture, and innovation.\n\nIn the background, several famous towers rise above the houses, evoking Amsterdam's historic skyline. Together, they create a distinctive cityscape, celebrating Amsterdam as a dynamic city that has thrived through centuries of change.",
     "dimensions": "45x9 cm",
     "price": "€50",
@@ -69,7 +69,7 @@ window.EMBROIDERY_DATA = [
     "subcategory": "regio-merklappen",
     "titleNL": "Merklap 1821",
     "titleEN": "Sampler 1821",
-    "descriptionNL": "Deze merklap is een zorgvuldig vervaardigde reproductie van een origineel uit 1821, ontstaan binnen de traditie van borduuronderwijs aan de Openbare Werk- en Leerschool in Amsterdam. Dit 19e-eeuwse instituut bood talentvolle, maar kwetsbare meisjes de kans om praktische vaardigheden te ontwikkelen, waaronder het borduren van merklappen. Deze oefenstukken dienden niet alleen als bewijs van hun kunde, maar waren ook een essentiële voorbereiding op een toekomst in de huishoudelijke of textielindustrie.\n\nDe merklap toont een gevarieerd palet aan motieven, waaronder kronen, een molen en een statig grachtenpand, die refereren aan de Nederlandse identiteit en het stedelijke leven. De afwezigheid van de letter J weerspiegelt de vroegere spellingconventies.\n\n---",
+    "descriptionNL": "Deze merklap is een zorgvuldig vervaardigde reproductie van een origineel uit 1821, ontstaan binnen de traditie van borduuronderwijs aan de Openbare Werk- en Leerschool in Amsterdam. Dit 19e-eeuwse instituut bood talentvolle, maar kwetsbare meisjes de kans om praktische vaardigheden te ontwikkelen, waaronder het borduren van merklappen. Deze oefenstukken dienden niet alleen als bewijs van hun kunde, maar waren ook een essentiële voorbereiding op een toekomst in de huishoudelijke of textielindustrie.\n\nDe merklap toont een gevarieerd palet aan motieven, waaronder kronen, een molen en een statig grachtenpand, die refereren aan de Nederlandse identiteit en het stedelijke leven. De afwezigheid van de letter J weerspiegelt de vroegere spellingconventies.",
     "descriptionEN": "This sampler is a meticulously crafted reproduction of an original from 1821, created within the tradition of embroidery education at the Public Work and Training School in Amsterdam. This 19th-century institution provided talented yet vulnerable girls with the opportunity to develop practical skills, including embroidery. These practice pieces not only served as proof of their craftsmanship but also played a crucial role in preparing them for a future in domestic service or the textile industry.\n\nThe sampler features a diverse array of motifs, including crowns, a windmill, and an elegant canal house, all referencing Dutch identity and urban life. Symbols such as apples and pears—possibly alluding to the appeltjes van Oranje—along with the presence of alphabets and initials, make this sampler a well-documented historical artifact. The absence of the letter \"J\" reflects historical spelling conventions of the time.",
     "dimensions": "57x66 cm",
     "price": "€40",
@@ -250,7 +250,7 @@ window.EMBROIDERY_DATA = [
   },
   {
     "image": "14.JPEG",
-    "category": "koninklijk",
+    "category": "delfts",
     "subcategory": "postzegel-borduurwerken",
     "titleNL": "Postzegel 45 cent – Koningin Juliana",
     "titleEN": "Postage Stamp 45 Cents – Queen Juliana",
@@ -272,7 +272,7 @@ window.EMBROIDERY_DATA = [
   },
   {
     "image": "15.JPEG",
-    "category": "koninklijk",
+    "category": "delfts",
     "subcategory": "postzegel-borduurwerken",
     "titleNL": "Postzegel 10 cent – Koningin Wilhelmina",
     "titleEN": "Postage Stamp 10 Cents – Queen Wilhelmina",
@@ -369,7 +369,7 @@ window.EMBROIDERY_DATA = [
       "zaanse schans"
     ]
   },
-  /*{
+  {
     "image": "23.JPEG",
     "category": "zaanse",
     "subcategory": "zaanse-schans",
@@ -394,7 +394,7 @@ window.EMBROIDERY_DATA = [
       "zaanse",
       "zaanse schans"
     ]
-  },*/
+  },
   {
     "image": "23 b.JPEG",
     "category": "zaanse",
@@ -776,7 +776,7 @@ window.EMBROIDERY_DATA = [
       "young queen"
     ]
   },
-  /*{
+  {
     "image": "38.JPEG",
     "category": "stadsgezichten",
     "subcategory": "iconische-panden",
@@ -802,7 +802,7 @@ window.EMBROIDERY_DATA = [
       "paleis",
       "royal"
     ]
-  },*/
+  },
   {
     "image": "38 b.JPEG",
     "category": "stadsgezichten",
@@ -891,7 +891,7 @@ window.EMBROIDERY_DATA = [
   },
   {
     "image": "41.JPEG",
-    "category": "molens",
+    "category": "stadsgezichten",
     "subcategory": "algemeen-stadsgezicht",
     "titleNL": "Watermolen in Holland",
     "titleEN": "Watermill in Holland",
@@ -1025,6 +1025,356 @@ window.EMBROIDERY_DATA = [
       "royal",
       "wedding",
       "willem-alexander"
+    ]
+  },
+  {
+    "image": "46a.JPEG",
+    "category": "stadsgezichten",
+    "subcategory": "algemeen-stadsgezicht",
+    "titleNL": "Historische Boerderij",
+    "titleEN": "Historic Farmhouse of the Netherlands",
+    "descriptionNL": "Het Nederlandse platteland is rijk aan diverse boerderijtypen, elk met een eigen geschiedenis en functie. Dit borduurwerk vangt de essentie van die agrarische architectuur en toont een karakteristieke boerderij, met een eigen bouwstijl en herkenbare elementen.\n\nDit borduurwerk is een eerbetoon aan de agrarische tradities van Nederland en aan de boerderij die niet alleen een thuis bood aan boerenfamilies, maar ook het landschap mede vorm gaf. Door dit ontwerp vast te leggen in borduurwerk blijft het erfgoed behouden, zelfs nu veel van deze historische gebouwen langzaam verdwijnen.\n\n---",
+    "descriptionEN": "The Dutch countryside is home to a rich variety of farmhouse types, each with its own history and function. This embroidery captures the essence of rural architecture and features one characteristic farmhouse, with its unique building style and distinctive elements.\n\nThis embroidery pays tribute to the agrarian traditions of the Netherlands and to the farmhouse that, for centuries, not only served as a home for farming families but also helped shape the landscape. By capturing this design in embroidery, the heritage is preserved—even as many historic farm buildings gradually disappear.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "2024",
+    "tags": [
+      "agrarisch",
+      "architectuur",
+      "boerderij",
+      "erfgoed",
+      "platteland"
+    ]
+  },
+  {
+    "image": "46b.JPEG",
+    "category": "stadsgezichten",
+    "subcategory": "algemeen-stadsgezicht",
+    "titleNL": "Historische Boerderij",
+    "titleEN": "Historic Farmhouse of the Netherlands",
+    "descriptionNL": "Het Nederlandse platteland is rijk aan diverse boerderijtypen, elk met een eigen geschiedenis en functie. Dit borduurwerk vangt de essentie van die agrarische architectuur en toont een karakteristieke boerderij, met een eigen bouwstijl en herkenbare elementen.\n\nDit borduurwerk is een eerbetoon aan de agrarische tradities van Nederland en aan de boerderij die niet alleen een thuis bood aan boerenfamilies, maar ook het landschap mede vorm gaf. Door dit ontwerp vast te leggen in borduurwerk blijft het erfgoed behouden, zelfs nu veel van deze historische gebouwen langzaam verdwijnen.\n\n---",
+    "descriptionEN": "The Dutch countryside is home to a rich variety of farmhouse types, each with its own history and function. This embroidery captures the essence of rural architecture and features one characteristic farmhouse, with its unique building style and distinctive elements.\n\nThis embroidery pays tribute to the agrarian traditions of the Netherlands and to the farmhouse that, for centuries, not only served as a home for farming families but also helped shape the landscape. By capturing this design in embroidery, the heritage is preserved—even as many historic farm buildings gradually disappear.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "2024",
+    "tags": [
+      "agrarisch",
+      "architectuur",
+      "boerderij",
+      "erfgoed",
+      "platteland"
+    ]
+  },
+  {
+    "image": "46c.JPEG",
+    "category": "stadsgezichten",
+    "subcategory": "algemeen-stadsgezicht",
+    "titleNL": "Historische Boerderij",
+    "titleEN": "Historic Farmhouse of the Netherlands",
+    "descriptionNL": "Het Nederlandse platteland is rijk aan diverse boerderijtypen, elk met een eigen geschiedenis en functie. Dit borduurwerk vangt de essentie van die agrarische architectuur en toont een karakteristieke boerderij, met een eigen bouwstijl en herkenbare elementen.\n\nDit borduurwerk is een eerbetoon aan de agrarische tradities van Nederland en aan de boerderij die niet alleen een thuis bood aan boerenfamilies, maar ook het landschap mede vorm gaf. Door dit ontwerp vast te leggen in borduurwerk blijft het erfgoed behouden, zelfs nu veel van deze historische gebouwen langzaam verdwijnen.\n\n---",
+    "descriptionEN": "The Dutch countryside is home to a rich variety of farmhouse types, each with its own history and function. This embroidery captures the essence of rural architecture and features one characteristic farmhouse, with its unique building style and distinctive elements.\n\nThis embroidery pays tribute to the agrarian traditions of the Netherlands and to the farmhouse that, for centuries, not only served as a home for farming families but also helped shape the landscape. By capturing this design in embroidery, the heritage is preserved—even as many historic farm buildings gradually disappear.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "2024",
+    "tags": [
+      "agrarisch",
+      "architectuur",
+      "boerderij",
+      "erfgoed",
+      "platteland"
+    ]
+  },
+  {
+    "image": "46d.JPEG",
+    "category": "stadsgezichten",
+    "subcategory": "algemeen-stadsgezicht",
+    "titleNL": "Historische Boerderij",
+    "titleEN": "Historic Farmhouse of the Netherlands",
+    "descriptionNL": "Het Nederlandse platteland is rijk aan diverse boerderijtypen, elk met een eigen geschiedenis en functie. Dit borduurwerk vangt de essentie van die agrarische architectuur en toont een karakteristieke boerderij, met een eigen bouwstijl en herkenbare elementen.\n\nDit borduurwerk is een eerbetoon aan de agrarische tradities van Nederland en aan de boerderij die niet alleen een thuis bood aan boerenfamilies, maar ook het landschap mede vorm gaf. Door dit ontwerp vast te leggen in borduurwerk blijft het erfgoed behouden, zelfs nu veel van deze historische gebouwen langzaam verdwijnen.\n\n---",
+    "descriptionEN": "The Dutch countryside is home to a rich variety of farmhouse types, each with its own history and function. This embroidery captures the essence of rural architecture and features one characteristic farmhouse, with its unique building style and distinctive elements.\n\nThis embroidery pays tribute to the agrarian traditions of the Netherlands and to the farmhouse that, for centuries, not only served as a home for farming families but also helped shape the landscape. By capturing this design in embroidery, the heritage is preserved—even as many historic farm buildings gradually disappear.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "2024",
+    "tags": [
+      "agrarisch",
+      "architectuur",
+      "boerderij",
+      "erfgoed",
+      "platteland"
+    ]
+  },
+  {
+    "image": "46e.JPEG",
+    "category": "stadsgezichten",
+    "subcategory": "algemeen-stadsgezicht",
+    "titleNL": "Historische Boerderij",
+    "titleEN": "Historic Farmhouse of the Netherlands",
+    "descriptionNL": "Het Nederlandse platteland is rijk aan diverse boerderijtypen, elk met een eigen geschiedenis en functie. Dit borduurwerk vangt de essentie van die agrarische architectuur en toont een karakteristieke boerderij, met een eigen bouwstijl en herkenbare elementen.\n\nDit borduurwerk is een eerbetoon aan de agrarische tradities van Nederland en aan de boerderij die niet alleen een thuis bood aan boerenfamilies, maar ook het landschap mede vorm gaf. Door dit ontwerp vast te leggen in borduurwerk blijft het erfgoed behouden, zelfs nu veel van deze historische gebouwen langzaam verdwijnen.\n\n---",
+    "descriptionEN": "The Dutch countryside is home to a rich variety of farmhouse types, each with its own history and function. This embroidery captures the essence of rural architecture and features one characteristic farmhouse, with its unique building style and distinctive elements.\n\nThis embroidery pays tribute to the agrarian traditions of the Netherlands and to the farmhouse that, for centuries, not only served as a home for farming families but also helped shape the landscape. By capturing this design in embroidery, the heritage is preserved—even as many historic farm buildings gradually disappear.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "2024",
+    "tags": [
+      "agrarisch",
+      "architectuur",
+      "boerderij",
+      "erfgoed",
+      "platteland"
+    ]
+  },
+  {
+    "image": "46f.JPEG",
+    "category": "stadsgezichten",
+    "subcategory": "algemeen-stadsgezicht",
+    "titleNL": "Historische Boerderij",
+    "titleEN": "Historic Farmhouse of the Netherlands",
+    "descriptionNL": "Het Nederlandse platteland is rijk aan diverse boerderijtypen, elk met een eigen geschiedenis en functie. Dit borduurwerk vangt de essentie van die agrarische architectuur en toont een karakteristieke boerderij, met een eigen bouwstijl en herkenbare elementen.\n\nDit borduurwerk is een eerbetoon aan de agrarische tradities van Nederland en aan de boerderij die niet alleen een thuis bood aan boerenfamilies, maar ook het landschap mede vorm gaf. Door dit ontwerp vast te leggen in borduurwerk blijft het erfgoed behouden, zelfs nu veel van deze historische gebouwen langzaam verdwijnen.\n\n---",
+    "descriptionEN": "The Dutch countryside is home to a rich variety of farmhouse types, each with its own history and function. This embroidery captures the essence of rural architecture and features one characteristic farmhouse, with its unique building style and distinctive elements.\n\nThis embroidery pays tribute to the agrarian traditions of the Netherlands and to the farmhouse that, for centuries, not only served as a home for farming families but also helped shape the landscape. By capturing this design in embroidery, the heritage is preserved—even as many historic farm buildings gradually disappear.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "2024",
+    "tags": [
+      "agrarisch",
+      "architectuur",
+      "boerderij",
+      "erfgoed",
+      "platteland"
+    ]
+  },
+  {
+    "image": "47.JPEG",
+    "category": "klederdracht",
+    "subcategory": "traditionele-kostuums",
+    "titleNL": "Het Draaiorgel (Pierement)",
+    "titleEN": "The Barrel Organ",
+    "descriptionNL": "Muziek en straatcultuur gaan in Nederland hand in hand, en niets roept die nostalgische sfeer beter op dan het draaiorgel. Dit borduurwerk brengt die typisch Hollandse traditie tot leven en toont een draaiorgel op een levendig dorpsplein, met stelletjes in klederdracht die dansen op de vrolijke klanken van het mechanische muziekinstrument.\n\nDraaiorgels waren in de 19e en 20e eeuw een vertrouwd straatbeeld, vooral in steden als Amsterdam en Utrecht, waar ze de straten vulden met muziek en het publiek vermaakten. Het bedienen van een pierement was niet alleen een ambacht, maar ook een manier om brood op de plank te krijgen.\n\nDit borduurwerk vangt de charme en energie van een tijdperk waarin draaiorgels het kloppend hart vormden van volksvermaak en samenzijn.\n\n---",
+    "descriptionEN": "Music and street culture go hand in hand in the Netherlands, and nothing evokes that nostalgic atmosphere better than the barrel organ, affectionately known as a \"pierement.\" This embroidery brings this quintessentially Dutch tradition to life, depicting a barrel organ on a lively village square, with couples in traditional dress dancing to its cheerful tunes.\n\nDuring the 19th and 20th centuries, barrel organs were a familiar sight on Dutch streets, especially in cities like Amsterdam and Utrecht, where they filled the streets with music and entertained passersby. Operating a pierement was not just a craft but also a livelihood for many.\n\nThis embroidery captures the charm and energy of an era when barrel organs were at the heart of street entertainment and communal life. It serves as a reminder of a cherished piece of Dutch heritage, a sound that still occasionally echoes through the streets today.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "19e-20e eeuw",
+    "tags": [
+      "draaiorgel",
+      "dracht",
+      "klederdracht",
+      "muziek",
+      "pierement",
+      "straatcultuur",
+      "volksvermaak"
+    ]
+  },
+  {
+    "image": "48.JPEG",
+    "category": "klederdracht",
+    "subcategory": "traditionele-kostuums",
+    "titleNL": "Nederlandse Klederdracht",
+    "titleEN": "Dutch Traditional Dress",
+    "descriptionNL": "Nederland kent een rijke verscheidenheid aan streekgebonden klederdracht, en dit borduurwerk brengt die diversiteit op prachtige wijze in beeld. Van de kleurrijke Staphorster stipwerk tot de sierlijke mutsen van Marken, en van de visserskleding van Scheveningen tot de traditionele dracht van Hindeloopen – elk kostuum vertelt een verhaal over de identiteit en geschiedenis van de regio.\n\nIn vroeger tijden was klederdracht niet alleen een modekeuze, maar ook een manier om iemands afkomst, sociale status en soms zelfs burgerlijke staat te herkennen. Deze tradities zijn door de industrialisatie grotendeels verdwenen uit het dagelijks leven, maar blijven een bron van trots en cultureel erfgoed.\n\nHet borduurwerk is niet alleen een kunstwerk, maar ook een stukje levende geschiedenis.\n\n---",
+    "descriptionEN": "The Netherlands has a rich variety of regional traditional dress, and this embroidery beautifully captures that diversity. From the colorful Staphorst stipwerk to the elegant bonnets of Marken, and from the fishermen's attire of Scheveningen to the ornate garments of Hindeloopen—each costume tells a story of regional identity and history.\n\nIn earlier times, traditional dress was more than just fashion; it served as a way to indicate one's origin, social status, and even marital state. While these traditions have largely disappeared from daily life due to industrialization, they remain a source of pride and cultural heritage.\n\nEmbroidery pieces like this celebrate craftsmanship and folk culture, ensuring that the tradition of Dutch traditional dress is not forgotten. This piece is not just an artwork, but a living piece of history.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "2024",
+    "tags": [
+      "cultureel erfgoed",
+      "dracht",
+      "identiteit",
+      "klederdracht",
+      "kostuum",
+      "streekdracht",
+      "traditioneel",
+      "volkskunst"
+    ]
+  },
+  {
+    "image": "49.JPEG",
+    "category": "zaanse",
+    "subcategory": "zaanse-schans",
+    "titleNL": "Hollandse Geveltjes",
+    "titleEN": "Row of Gabled Façades",
+    "descriptionNL": "Dit handgeborduurde straattafereel voert u mee langs vier eeuwen Nederlandse architectuur. Met fijnzinnige kruissteken zijn zes karakteristieke gevels vastgelegd die samen het verhaal vertellen van Hollandse steden en dorpen, van de Gouden Eeuw tot de vroege industrialisatie.\n\nVan links naar rechts: een statige lijstgevel in laat‑Lodewijk‑XVI‑stijl (± 1780‑1810), zoals men die aantreft in Hoorn en Enkhuizen; een groen houten halsgevel‑huis uit de Zaanstreek (17e‑18e eeuw) met zijn kenmerkende krulmakelaar; een renaissancistische trapgevel (ca. 1580‑1650) die doet denken aan Haarlem of Delft; een neoklassiek lijstgeveltje met winkelpui uit het midden van de 19e eeuw, typerend voor polderdorpen; een sierlijke barokke klokgevel (1680‑1750) zoals die de Amsterdamse grachten rijk zijn; en tenslotte een groen houten puntgevel‑dijkhuis (18e‑19e eeuw) dat langs de oevers van de Zaan of in de Beemster had kunnen staan.\n\n---",
+    "descriptionEN": "This hand‑embroidered street scene takes you on a journey through four centuries of Dutch architecture. With delicate cross‑stitches, six characteristic façades have been captured, together telling the story of Dutch towns and villages from the Golden Age to the early period of industrialisation.\n\nFrom left to right: a stately cornice‑front house in late Louis XVI style (± 1780‑1810), of the kind found in Hoorn and Enkhuizen; a green wooden \"neck‑gable\" house from the Zaan region (17th–18th centuries) with its distinctive scroll‑shaped finial; a Renaissance stepped‑gable (ca. 1580‑1650) reminiscent of Haarlem or Delft; a small Neoclassical cornice‑front with shopfront from the mid‑19th century, typical of polder villages; an elegant Baroque bell‑gable (1680‑1750) such as those lining the canals of Amsterdam; and finally a green wooden point‑gable dike‑house (18th–19th centuries) that might have stood along the banks of the River Zaan or in the Beemster.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "kruissteek",
+    "year": "1580-1810",
+    "tags": [
+      "architectuur",
+      "gevels",
+      "gouden eeuw",
+      "historisch",
+      "hollands",
+      "stadsgezicht",
+      "zaan"
+    ]
+  },
+  {
+    "image": "50.JPEG",
+    "category": "delfts",
+    "subcategory": "tegelmotieven",
+    "titleNL": "Zeilboot in Delfts Blauw",
+    "titleEN": "Sailing Boat in Delft Blue",
+    "descriptionNL": "Delftsblauwe tegels vormen een iconisch onderdeel van het Nederlandse erfgoed en worden al sinds de 17e eeuw vervaardigd. Dit borduurwerk brengt deze traditie tot leven met een afbeelding van een zeilboot, een motief dat symbool staat voor Nederland als maritieme natie.\n\nOorspronkelijk werden Delftsblauwe tegels met de hand beschilderd en sierden ze de wanden van huizen, schouwen en openbare gebouwen. De combinatie van diepe blauwe tinten op een witte achtergrond werd geïnspireerd door Chinees porselein en groeide uit tot een tijdloos decoratief element.\n\nDit stukje handwerk eert zowel de ambachtelijke traditie van tegelkunst als het nautische erfgoed waar Nederland om bekendstaat.\n\n---",
+    "descriptionEN": "Delft Blue tiles are an iconic part of Dutch heritage and have been crafted since the 17th century. This embroidery brings this tradition to life with an image of a sailing boat, a motif symbolizing the Netherlands as a maritime nation.\n\nOriginally, Delft Blue tiles were hand-painted and adorned the walls of homes, fireplaces, and public buildings. The combination of deep blue tones on a white background was inspired by Chinese porcelain and evolved into a timeless decorative element.\n\nThe sailing boat in this embroidery highlights the Netherlands' deep connection to water, trade, and exploration.\n\nThis piece of craftsmanship honors both the artisanal tradition of tile art and the nautical heritage for which the Netherlands is renowned.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "17e eeuw",
+    "tags": [
+      "blauw",
+      "delft",
+      "delfts blauw",
+      "erfgoed",
+      "handwerk",
+      "maritiem",
+      "tegel",
+      "tegels",
+      "zeilboot"
+    ]
+  },
+  {
+    "image": "51.JPEG",
+    "category": "delfts",
+    "subcategory": "tegelmotieven",
+    "titleNL": "Fruitschaal in Delfts Blauw",
+    "titleEN": "Fruit Bowl in Delft Blue",
+    "descriptionNL": "Delftsblauwe tegels vormen een iconisch onderdeel van het Nederlandse erfgoed en worden al sinds de 17e eeuw vervaardigd. Dit borduurwerk brengt deze traditie tot leven met een afbeelding van een decoratieve schaal gevuld met bloemen en vruchten, omlijst door karakteristieke siermotieven.\n\nOorspronkelijk werden Delftsblauwe tegels met de hand beschilderd en sierden ze de wanden van huizen, schouwen en openbare gebouwen. De diepe blauwtinten op een witte achtergrond waren geïnspireerd door Chinees porselein en groeiden uit tot een geliefd decoratief element.\n\nDe verfijnde kruissteektechniek in dit borduurwerk vertaalt het traditionele tegelontwerp naar textielkunst en eert zowel de ambachtelijke traditie van de Nederlandse tegelproductie als de blijvende invloed van Delftsblauw in interieurs en kunst.\n\n---",
+    "descriptionEN": "Delft Blue tiles are an iconic part of Dutch heritage and have been crafted since the 17th century. This embroidery brings this tradition to life with an image of a decorative fruit bowl, framed by characteristic ornamental motifs.\n\nOriginally, Delft Blue tiles were hand-painted and adorned the walls of homes, fireplaces, and public buildings. The deep blue tones on a white background were inspired by Chinese porcelain and evolved into a beloved decorative element. Designs featuring fruit bowls and floral arrangements were common in tiles and ceramics, symbolizing prosperity, abundance, and domestic harmony.\n\nThe refined cross-stitch technique in this embroidery translates the traditional tile design into textile art, honoring both the artisanal tradition of Dutch tile production and the lasting influence of Delft Blue in interiors and decorative arts.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "kruissteek",
+    "year": "17e eeuw",
+    "tags": [
+      "blauw",
+      "decoratief",
+      "delft",
+      "delfts blauw",
+      "erfgoed",
+      "fruitschaal",
+      "tegel",
+      "tegels",
+      "textielkunst"
+    ]
+  },
+  {
+    "image": "52.JPEG",
+    "category": "delfts",
+    "subcategory": "tegelmotieven",
+    "titleNL": "Tulpen in Delfts Blauw",
+    "titleEN": "Tulips in Delft Blue",
+    "descriptionNL": "Delftsblauwe tegels vormen een iconisch onderdeel van het Nederlandse erfgoed en worden al sinds de 17e eeuw vervaardigd. Dit borduurwerk brengt deze traditie tot leven met een afbeelding van tulpen, de nationale bloem van Nederland en een symbool van welvaart en culturele uitwisseling.\n\nOorspronkelijk werden Delftsblauwe tegels met de hand beschilderd en sierden ze de wanden van huizen, schouwen en openbare gebouwen. De diepe blauwtinten op een witte achtergrond waren geïnspireerd door Chinees porselein en groeiden uit tot een tijdloos decoratief element.\n\nDe tulp in dit borduurwerk verwijst naar de beroemde tulpenmanie in de 17e eeuw, toen de bloem een statussymbool werd en Nederland wereldwijd bekendheid gaf als centrum van de bloembollenteelt.\n\n---",
+    "descriptionEN": "Delft Blue tiles are an iconic part of Dutch heritage and have been crafted since the 17th century. This embroidery brings this tradition to life with an image of tulips, the national flower of the Netherlands and a symbol of prosperity and cultural exchange.\n\nOriginally, Delft Blue tiles were hand-painted and adorned the walls of homes, fireplaces, and public buildings. The deep blue tones on a white background were inspired by Chinese porcelain and evolved into a timeless decorative element. Floral motifs, such as the tulip, were especially popular and reflected the great influence of the tulip trade during the Golden Age.\n\nThe tulip in this embroidery refers to the famous Tulip Mania of the 17th century, when the flower became a status symbol and helped establish the Netherlands as a global center of flower cultivation.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "17e eeuw",
+    "tags": [
+      "blauw",
+      "bloembollen",
+      "delft",
+      "delfts blauw",
+      "gouden eeuw",
+      "nationale bloem",
+      "tegel",
+      "tulpen",
+      "tulpenmanie"
+    ]
+  },
+  {
+    "image": "56.JPEG",
+    "category": "zaanse",
+    "subcategory": "zaanse-schans",
+    "titleNL": "Zaanse Molen",
+    "titleEN": "Zaanse Windmill",
+    "descriptionNL": "De Zaanse Schans is een levend monument van Nederlands erfgoed, een plek waar de molens en ambachtshuizen de geschiedenis tastbaar maken. Dit borduurwerk toont een iconische windmolen, die eeuwenlang symbool stond voor innovatie en vakmanschap in de Zaanstreek. De Zaanstreek was in de 17e en 18e eeuw een van de eerste industriegebieden ter wereld, waar honderden molens zorgden voor de verwerking van hout, olie, graan en andere grondstoffen.\n\nMet de opkomst van moderne technieken verdwenen veel molens, maar dankzij behoud en restauratie blijft de Zaanse Schans een plek waar deze bijzondere bouwwerken in volle glorie te bewonderen zijn. Dit borduurwerk vangt niet alleen het landschap, maar ook de geest van een tijdperk waarin windenergie de drijvende kracht was achter de Hollandse handelsgeest.\n\n---",
+    "descriptionEN": "The Zaanse Schans is a living monument of Dutch heritage—a place where windmills and traditional craft houses bring history to life. This embroidery depicts an iconic windmill, a symbol of innovation and craftsmanship in the Zaan region for centuries. In the 17th and 18th centuries, the Zaan area was one of the world's first industrial zones, where hundreds of mills processed wood, oil, grain, and other raw materials.\n\nWith the rise of modern technology, many windmills disappeared, but thanks to preservation and restoration efforts, the Zaanse Schans remains a place where these remarkable structures can be admired in their full glory. This embroidery captures not just the landscape, but also the spirit of an era in which wind power fueled the enterprising Dutch spirit.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "17e-18e eeuw",
+    "tags": [
+      "industrieel erfgoed",
+      "vakmanschap",
+      "windenergie",
+      "windmolen",
+      "zaan",
+      "zaanse",
+      "zaanse schans",
+      "zaanstreek"
+    ]
+  },
+  {
+    "image": "57.JPEG",
+    "category": "zaanse",
+    "subcategory": "zaanse-schans",
+    "titleNL": "Zaanse Molen",
+    "titleEN": "Zaanse Windmill",
+    "descriptionNL": "De Zaanse Schans is een levend monument van Nederlands erfgoed, een plek waar de molens en ambachtshuizen de geschiedenis tastbaar maken. Dit borduurwerk toont een iconische windmolen, die eeuwenlang symbool stond voor innovatie en vakmanschap in de Zaanstreek. De Zaanstreek was in de 17e en 18e eeuw een van de eerste industriegebieden ter wereld, waar honderden molens zorgden voor de verwerking van hout, olie, graan en andere grondstoffen.\n\nMet de opkomst van moderne technieken verdwenen veel molens, maar dankzij behoud en restauratie blijft de Zaanse Schans een plek waar deze bijzondere bouwwerken in volle glorie te bewonderen zijn. Dit borduurwerk vangt niet alleen het landschap, maar ook de geest van een tijdperk waarin windenergie de drijvende kracht was achter de Hollandse handelsgeest.\n\n---",
+    "descriptionEN": "The Zaanse Schans is a living monument of Dutch heritage—a place where windmills and traditional craft houses bring history to life. This embroidery depicts an iconic windmill, a symbol of innovation and craftsmanship in the Zaan region for centuries. In the 17th and 18th centuries, the Zaan area was one of the world's first industrial zones, where hundreds of mills processed wood, oil, grain, and other raw materials.\n\nWith the rise of modern technology, many windmills disappeared, but thanks to preservation and restoration efforts, the Zaanse Schans remains a place where these remarkable structures can be admired in their full glory. This embroidery captures not just the landscape, but also the spirit of an era in which wind power fueled the enterprising Dutch spirit.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "17e-18e eeuw",
+    "tags": [
+      "industrieel erfgoed",
+      "vakmanschap",
+      "windenergie",
+      "windmolen",
+      "zaan",
+      "zaanse",
+      "zaanse schans",
+      "zaanstreek"
+    ]
+  },
+  {
+    "image": "58.JPEG",
+    "category": "zaanse",
+    "subcategory": "zaanse-schans",
+    "titleNL": "Zaanse Molen",
+    "titleEN": "Zaanse Windmill",
+    "descriptionNL": "De Zaanse Schans is een levend monument van Nederlands erfgoed, een plek waar de molens en ambachtshuizen de geschiedenis tastbaar maken. Dit borduurwerk toont een iconische windmolen, die eeuwenlang symbool stond voor innovatie en vakmanschap in de Zaanstreek. De Zaanstreek was in de 17e en 18e eeuw een van de eerste industriegebieden ter wereld, waar honderden molens zorgden voor de verwerking van hout, olie, graan en andere grondstoffen.\n\nMet de opkomst van moderne technieken verdwenen veel molens, maar dankzij behoud en restauratie blijft de Zaanse Schans een plek waar deze bijzondere bouwwerken in volle glorie te bewonderen zijn. Dit borduurwerk vangt niet alleen het landschap, maar ook de geest van een tijdperk waarin windenergie de drijvende kracht was achter de Hollandse handelsgeest.\n\n---",
+    "descriptionEN": "The Zaanse Schans is a living monument of Dutch heritage—a place where windmills and traditional craft houses bring history to life. This embroidery depicts an iconic windmill, a symbol of innovation and craftsmanship in the Zaan region for centuries. In the 17th and 18th centuries, the Zaan area was one of the world's first industrial zones, where hundreds of mills processed wood, oil, grain, and other raw materials.\n\nWith the rise of modern technology, many windmills disappeared, but thanks to preservation and restoration efforts, the Zaanse Schans remains a place where these remarkable structures can be admired in their full glory. This embroidery captures not just the landscape, but also the spirit of an era in which wind power fueled the enterprising Dutch spirit.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "17e-18e eeuw",
+    "tags": [
+      "industrieel erfgoed",
+      "vakmanschap",
+      "windenergie",
+      "windmolen",
+      "zaan",
+      "zaanse",
+      "zaanse schans",
+      "zaanstreek"
+    ]
+  },
+  {
+    "image": "59.JPEG",
+    "category": "flora",
+    "subcategory": "kamer-wilde-bloemen",
+    "titleNL": "ABC van Dick Bruna",
+    "titleEN": "ABC by Dick Bruna",
+    "descriptionNL": "Met sprankelende steken transformeert dit borduurwerk Dick Bruna's iconische ABC in tastbaar textiel: heldere kleurvlakken, krachtige contouren en vertederende figuren die meteen vertrouwd aanvoelen. De compositie ademt het optimisme van de jaren zestig, toen Bruna met minimale vormen en primaire kleuren de verbeelding van jonge lezers wist te vangen.\n\nLinksboven prijkt het titelvak \"b is een beer – abc van dick bruna\", een directe verwijzing naar het bekroonde prentenboek uit 1962 dat generaties kinderen de eerste letters leerde.\n\nMet zijn vrolijke kleurpalet en tijdloze vormtaal vangt dit borduurwerk de essentie van Bruna's less is more filosofie. Het wekt de nostalgie op van voorleesmomenten en klaslokalen vol verwondering, en vereeuwigt een stukje Nederlandse illustratie geschiedenis in draad.\n\n---",
+    "descriptionEN": "Stitched with lively precision, this embroidery turns Dick Bruna's iconic ABC into tangible textile. Bright blocks of colour, bold outlines and endearing characters mingle in a composition that exudes the optimism of the 1960s, when Bruna captured young readers' imaginations with primary hues and pared down shapes.\n\nIn the upper left corner, the title panel \"b is een beer – abc van dick bruna\" gleams—a direct nod to the award winning 1962 picture book that taught generations of children their first letters.\n\nWith its cheerful colour palette and timeless visual language, the piece embodies Bruna's less is more philosophy. It conjures memories of story time moments and classrooms filled with wonder, immortalising a slice of Dutch illustration history in thread.",
+    "dimensions": "25x30 cm",
+    "price": "",
+    "technique": "Kruissteek",
+    "year": "1962",
+    "tags": [
+      "abc",
+      "dick bruna",
+      "illustratie",
+      "jaren zestig",
+      "kinderliteratuur",
+      "nijntje",
+      "prentenboek"
     ]
   }
 ];

@@ -14,7 +14,9 @@ class EmbroideryDataLoader {
             '26.JPEG', '27.JPEG', '28.JPEG', '29.JPEG', '30.JPEG', '31.JPEG',
             '32.JPEG', '33.JPEG', '34.JPEG', '35.JPEG', '36.JPEG', '37.JPEG',
             '38.JPEG', '38 b.JPEG', '39.JPEG', '40.JPEG', '41.JPEG', '42.JPEG',
-            '43.JPEG', '44.JPEG', '45.JPEG'
+            '43.JPEG', '44.JPEG', '45.JPEG', '46a.JPEG', '46b.JPEG', '46c.JPEG',
+            '46d.JPEG', '46e.JPEG', '46f.JPEG', '47.JPEG', '48.JPEG', '49.JPEG',
+            '50.JPEG', '51.JPEG', '52.JPEG', '56.JPEG', '57.JPEG', '58.JPEG', '59.JPEG'
         ];
 
         for (const imageFile of imageFiles) {
